@@ -24,26 +24,9 @@ var paths = {
                 'app/js/jquery.index.js',
                 'app/js/jquery.popup.js',
                 'app/js/jquery.websters-select.js',
-                'app/js/jquery.animation.js'
-            ]
-        },
-        {
-            dist: 'about.min.js',
-            contains: [
-                'app/js/jquery.main.js',
-                'app/js/jquery.scroll-to.js',
                 'app/js/jquery.animation.js',
-                'app/js/jquery.popup.js',
-                'app/js/jquery.review.js'
-
-            ]
-        },
-        {
-            dist: 'job-single.min.js',
-            contains: [
-                'app/js/jquery.main.js',
-                'app/js/jquery.single.js',
-                'app/js/jquery.popup.js'
+                'app/js/jquery.news.js',
+                'app/js/jquery.references.js'
             ]
         },
         {
@@ -53,24 +36,6 @@ var paths = {
                 'app/js/jquery.filter-form.js',
                 'app/js/jquery.budget-slider.js',
                 'app/js/jquery.websters-select.js',
-                'app/js/jquery.popup.js'
-            ]
-        },
-        {
-            dist: 'services.min.js',
-            contains: [
-                'app/js/jquery.main.js',
-                'app/js/jquery.approach.js',
-                'app/js/jquery.animation.js',
-                'app/js/jquery.popup.js'
-            ]
-        },
-        {
-            dist: 'contact-us.min.js',
-            contains: [
-                'app/js/jquery.main.js',
-                'app/js/jquery.websters-select.js',
-                'app/js/jquery.contact.js',
                 'app/js/jquery.popup.js'
             ]
         }

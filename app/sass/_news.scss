@@ -1,0 +1,146 @@
+
+.news {
+  padding: 117px 0 50px;
+
+  &__title {
+    margin-bottom: 63px;
+    font-size: 36px;
+    color: $main-blue-color;
+    text-align: center;
+    @include main-font3();
+  }
+  &__list {
+    position: relative;
+
+    .swiper-button-next,
+    .swiper-button-prev {
+      @include absoluteCenterY();
+      width: 17px;
+      height: 30px;
+      background: none;
+      margin: 0;
+
+      svg {
+        width: 100%;
+        height: 100%;
+
+        path{
+          fill: #dddddd;
+          @include transition( fill, .2, 0 );
+        }
+      }
+      &:hover svg {
+
+        path {
+          fill: $main-orange-color;
+        }
+      }
+    }
+    .swiper-button-prev {
+      left: -77px;
+
+      svg {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+      }
+    }
+    .swiper-button-next {
+      right: -77px;
+    }
+  }
+  &__item {
+    width: 30%;
+    margin: 0;
+    padding: 51px 39px 87px;
+    border: 2px solid #eee;
+    box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0);
+    @include transition( all, .2, 0 );
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      border-color: $main-orange-color;
+      box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.08);
+
+      .news__item-link {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+
+        svg {
+          @include absoluteCenter();
+          height: 30px;
+
+          path {
+            fill: $main-orange-color;
+          }
+        }
+      }
+    }
+  }
+  &__item-title {
+    overflow: hidden;
+    height: 80px;
+    margin-bottom: 24px;
+    font-size: 30px;
+    line-height: 40px;
+    color: $main-blue-color;
+    font-weight: 400;
+  }
+  &__item-text {
+    overflow: hidden;
+    height: 208px;
+    font-size: 18px;
+    line-height: 26px;
+    letter-spacing: -0.1px;
+    color: $main-text-color;
+    @include main-font7();
+  }
+  &__item-link {
+    position: absolute;
+    display: inline-block;
+    bottom: 50px;
+    left: 40px;
+    font-size: 13px;
+    line-height: 30px;
+    color: $main-blue-color;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    @include main-font5();
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    @include transition(all, .2, 0);
+
+    svg {
+      @include absoluteCenterY();
+      left: 114%;
+      height: 14px;
+      width: auto;
+      @include transition(all, .2, 0);
+
+      path {
+        fill: #dfdfdf;
+        @include transition(fill, .2, 0);
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+}
+@media (min-width: $tablet-landscape) {
+
+
+}
+@media (min-width: $desktop) {
+
+
+}
+
+

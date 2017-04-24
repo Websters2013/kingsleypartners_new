@@ -15,7 +15,7 @@
     .websters-select {
       width: 100%;
       height: 50px;
-      padding: 0 10px;
+      padding: 0 12px;
       margin-bottom: 5px;
       border: none;
       border-radius: 0;
@@ -23,8 +23,7 @@
       font-size: 16px;
       line-height: 31px;
       color: $search-panel-color;
-      letter-spacing: -0.4px;
-      @include  main-font5();
+      letter-spacing: 0.6px;
 
       &::-webkit-input-placeholder {color:$search-panel-color;}
       &::-moz-placeholder          {color:$search-panel-color;}
@@ -44,18 +43,15 @@
     position: relative;
     width: 100%;
     height: 50px;
-    padding: 0 10px;
+    padding: 0 11px;
     margin-bottom: 5px;
     border: none;
     border-radius: 0;
     font-size: 16px;
     line-height: 50px;
     color: $search-panel-color;
-    letter-spacing: -0.4px;
-    @include  main-font5();
+    letter-spacing: 0.3px;
     text-align: left;
-
-
   }
   &__dropdown-val {
     overflow: hidden;

@@ -2,9 +2,9 @@
   position: relative;
   //padding: 90px 0 40px;
 
-  .site__centered {
-    max-width: 1565px;
-  }
+  //.site__centered {
+  //  max-width: 1565px;
+  //}
   &__wrap {
     padding: 40px 0;
   }
@@ -14,7 +14,7 @@
     font-size: 30px;
     line-height: 1;
     color: $main-blue-color;
-    letter-spacing: -0.9px;
+    letter-spacing: -0.2px;
     @include main-font3();
   }
   &__text {
@@ -22,6 +22,7 @@
     margin-bottom: 25px;
     font-size: 16px;
     line-height: 21px;
+    letter-spacing: -0.2px;
     color: $main-text-color;
     @include main-font7();
   }
@@ -32,7 +33,7 @@
     line-height: 24px;
     color: $main-blue-color;
     white-space: pre-line;
-    @include main-font7();
+    @include main-font8();
   }
   &__slider {
     overflow: hidden;
@@ -75,6 +76,7 @@
         font-size: 18px;
         line-height: 22px;
         color: $main-blue-color;
+        letter-spacing: -0.3px;
         @include main-font2()
       }
     }
@@ -85,7 +87,7 @@
       font-size: 20px;
       line-height: 25px;
       color: $main-blue-color;
-      letter-spacing: -0.1px;
+      letter-spacing: -0.3px;
       @include main-font3();
     }
     .btn {
@@ -94,6 +96,7 @@
       font-size: 13px;
       line-height: 32px;
       padding: 0 30px;
+      letter-spacing: 0;
       background: #f9fbfd;
 
       &:hover {
@@ -120,11 +123,12 @@
         }
         dt {
           display: block;
-          margin-bottom: 7px;
+          margin-bottom: 3px;
           font-size: 11px;
           line-height: 1;
           color: $main-text-color;
           @include main-font8();
+          letter-spacing: 0;
           font-weight: 700;
           text-transform: uppercase;
         }
@@ -134,7 +138,7 @@
           line-height: 16px;
           color: $main-blue-color;
           @include main-font10();
-          letter-spacing: -0.7px;
+          letter-spacing: 0.1px;
           white-space: nowrap;
           text-overflow: ellipsis;
         }
@@ -250,7 +254,7 @@
       bottom: 25px;
       left: 15px;
       height: auto;
-      padding: 7px 20px;
+      padding: 8px 24px 6px;
       background: #f9fbfd;
 
       &:hover {
@@ -264,7 +268,6 @@
 @media (min-width: $tablet-portrait) {
 
   .about-us {
-    //padding: 40px 0;
 
     &__slider {
 
@@ -305,7 +308,6 @@
         bottom: 25px;
         left: 15px;
         height: auto;
-        padding: 7px 20px;
       }
     }
   }
@@ -334,7 +336,7 @@
 
         > span {
           max-height: 62px;
-          margin-bottom: 25px;
+          margin-bottom: 24px;
           font-size: 24px;
           line-height: 32px;
         }
@@ -391,7 +393,7 @@
         left: auto;
         margin: 0;
         top: auto;
-        bottom: 27px;
+        bottom: 57px;
 
         &:after {
           left: 42%;
@@ -409,9 +411,6 @@
       .about-us__title {
         padding: 0 0 0 29px;
       }
-      //.about-us__text {
-      //  max-height: 120px;
-      //}
 
       > .btn {
         top: 58px;
@@ -425,31 +424,31 @@
 @media (min-width: $desktop) {
 
   .about-us {
-    min-height: 750px;
+    min-height: 710px;
     padding: 0 30px 29px;
 
     &__wrap {
-      padding: 90px 0;
+      padding: 155px 0 127px;
       max-width: 420px;
     }
     &__title {
-      margin-bottom: 28px;
+      margin-bottom: 26px;
       font-size: 36px;
     }
     &__text {
-      margin-bottom: 51px;
+      margin-bottom: 29px;
       font-size: 18px;
       line-height: 30px;
     }
     &__mark {
-      margin-bottom: 30px;
+      margin-bottom: 52px;
       font-size: 22px;
       line-height: 30px;
     }
     &__slider {
       min-height: 500px;
       height: 100%;
-      padding: 28px 50px 0 87px;
+      padding: 31px 50px 0 86px;
 
       &-wrap {
         right: -2px;
@@ -480,11 +479,15 @@
       &-footer {
         left: 0;
         right: 0;
-        bottom: 8px;
+        bottom: 72px;
 
         dl {
-          padding: 39px 10px 31px 32px;
-          width: 36%;
+          padding: 0 33px 0 33px;
+          width: 34.3%;
+
+          &:last-child {
+            width: 38%;
+          }
         }
       }
       &-arrow {
@@ -509,8 +512,8 @@
       }
     }
     &__offers {
-      width: 60.5%;
-      padding: 90px 0;
+      width: 49.2%;
+      padding: 154px 0;
 
       .swiper-button-next,
       .swiper-button-prev {
@@ -538,11 +541,12 @@
       }
       .about-us__text {
         max-height: 120px;
+        margin-bottom: 30px;
       }
 
       > .btn {
-        top: 92px;
-        right: 12.5%;
+        top: 154px;
+        right: 11.8%;
       }
     }
   }
@@ -577,25 +581,15 @@
       }
     }
     &__offers {
-      //position: absolute;
-      //top: 153px;
-      //right: 0;
-      //width: 48.3%;
 
       .swiper-button-next,
       .swiper-button-prev {
-        right: 115px;
+        right: 109px;
         left: auto;
-
-
       }
       .swiper-button-prev {
-        right: 197px;
-
-
+        right: 190px;
       }
-
     }
   }
-
 }

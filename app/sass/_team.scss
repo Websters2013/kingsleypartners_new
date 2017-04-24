@@ -8,7 +8,7 @@
     text-align: center;
     font-size: 30px;
     color: $team-title-color;
-    letter-spacing: -0.9px;
+    letter-spacing: -0.1px;
     @include main-font3();
 
     span {
@@ -65,7 +65,7 @@
         font-size: 17px;
         line-height: 20px;
         color: $main-blue-color;
-        letter-spacing: -0.4px;
+        letter-spacing: -0.7px;
         @include main-font7();
 
         &:after {
@@ -88,7 +88,6 @@
     font-size: 17px;
     line-height: 20px;
     @include main-font7();
-    font-weight: 700;
   }
   &__selection-about {
     overflow: hidden;
@@ -97,7 +96,7 @@
     color: $main-blue-color;
     font-size: 22px;
     text-align: center;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.1px;
     @include  main-font6();
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -135,11 +134,11 @@
 @media (min-width: $desktop) {
 
   .team {
-    padding: 115px 0;
+    padding: 116px 0 99px;
 
     &__title {
-      margin-bottom: 75px;
-      font-size: 34px;
+      margin-bottom: 74px;
+      font-size: 36px;
 
       span {
         font-size: 22px;
@@ -160,29 +159,31 @@
     &__selection-text {
       overflow: hidden;
       height: 320px;
-      padding: 55px 44px;
+      padding: 38px 46px;
 
       ul {
 
         li {
-          padding-left: 18px;
+          margin-bottom: 4px;
+          padding-left: 21px;
           font-size: 18px;
           line-height: 36px;
 
           &:after {
-            top: 13px;
+            top: 12px;
           }
         }
       }
     }
     &__selection-title {
-      width: 50%;
-      margin-bottom: 15px;
-      font-size: 20px;
+      width: 65%;
+      margin-bottom: 19px;
+      font-size: 24px;
       line-height: 30px;
+      letter-spacing: -1.1px;
     }
     &__selection-about {
-      padding: 25px 10px;
+      padding: 27px 10px 24px;
       font-size: 30px;
     }
   }

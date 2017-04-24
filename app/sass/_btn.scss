@@ -3,12 +3,13 @@
   vertical-align: top;
   position: relative;
   height: 60px;
-  padding: 20px 38px;
+  padding: 20px 41px;
   border-radius: 29px;
   border: 2px solid $main-orange-color;
   background-color: $btn-back;
   font-size: 14px;
   line-height: 16px;
+  letter-spacing: 0.7px;
   color: $main-blue-color;
   @include main-font1();
   @include transition(all, .3, 0);
@@ -40,8 +41,8 @@
     height: auto;
     font-size: 18px;
     line-height: 46px;
-    color: $main-orange-color;
-    letter-spacing: -1px;
+    //color: $main-orange-color;
+    letter-spacing: 0.4px;
 
     &:before,
     &:after{
@@ -123,7 +124,7 @@
     color: $main-orange-color;
   }
   &_search {
-    padding: 0 22px;
+    padding: 0 39px;
     background: $main-blue-color;
     border: none;
     height: 48px;
