@@ -1,0 +1,119 @@
+.social {
+  position: absolute;
+  display: inline-block;
+  top: 12px;
+  right: 10px;
+
+  li {
+    vertical-align: top;
+    display: inline-block;
+    margin-left: 5px;
+
+    a {
+      display: table;
+      width: 25px;
+      height: 25px;
+      padding: 2px 0 0;
+      border-radius: 50%;
+      text-align: center;
+      vertical-align: middle;
+      @include transition(transform, .2, 0);
+      
+      i {
+        vertical-align: middle;
+        color: $social-color;
+        font-size: 16px;
+      }
+      &:hover {
+        -webkit-transform: translateY(-3px);
+        transform: translateY(-3px);
+      }
+    }
+  }
+
+  &__facebook {
+    
+    a {
+      background: $social-facebook-back;
+    }
+  }
+  &__twitter {
+
+    a {
+      background: $social-twitter-back;
+    }
+  }
+  &__linkedin {
+
+    a {
+      background: $social-linkedin-back;
+    }
+  }
+  &__viadeo {
+
+    a {
+      background: $social-viadeo-back;
+    }
+  }
+  &__google {
+
+    a {
+      background: $social-google-back;
+    }
+  }
+
+}
+.social_big {
+
+  li {
+    margin-left: 10px;
+
+    a {
+      display: table-cell;
+      width: 36px;
+      height: 36px;
+      padding: 2px 0 0;
+
+      i {
+        font-size: 24px;
+      }
+
+    }
+    &.social__google {
+
+      i {
+        font-size: 18px;
+      }
+    }
+   &.social__linkedin {
+
+      a{
+        padding-top: 0;
+      }
+    }
+  }
+}
+
+
+@media (min-width: $tablet-landscape) {
+
+  .social {
+    top: -44px;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .social {
+    right: 30px;
+  }
+}
+
+@media (min-width: $desktop-wide) {
+
+  .social {
+    top: 1px;
+    right: -226px;
+  }
+}

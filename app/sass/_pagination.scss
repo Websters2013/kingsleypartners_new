@@ -1,0 +1,138 @@
+
+.pagination {
+  position: relative;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    vertical-align: top;
+    width: 30px;
+    height: 30px;
+    margin: 0 3px;
+    padding: 4px 0 0;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    font-size: 18px;
+    color: $main-text-color;
+    text-align: center;
+    @include main-font8();
+    font-weight: 900;
+    -webkit-transition: border-color .3s, color .3s;
+    transition: border-color .3s, color .3s;
+
+    &.active,
+    &:hover {
+      border-color: $main-blue-color;
+      color: $main-blue-color;
+    }
+    &.active {
+      cursor: default;
+    }
+    &.pagination__prev,
+    &.pagination__next{
+      position: absolute;
+      top: 5px;
+      width: 20px;
+      height: 20px;
+      border: none;
+      border-radius: 0;
+      margin: 0;
+      padding-top: 0;
+      text-indent: -10000px;
+      font-size: 17px;
+      letter-spacing: 0.2px;
+      @include  main-font10();
+
+      &:after,
+      &:before {
+        opacity: 1;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: url(../img/pagination-arrows.png) no-repeat;
+        background-size: 50px 50px;
+        content: '';
+        -webkit-transition: opacity .3s;
+        transition: opacity .3s;
+
+      }
+      &:after {
+        opacity: 0;
+      }
+      &:hover,
+      &.active {
+
+        &:before {
+          opacity: 0;
+        }
+        &:after {
+          opacity: 1;
+        }
+      }
+    }
+    &.pagination__prev {
+      left: 0;
+
+      &:before {
+        left: -2px;
+        background-position: left top;
+      }
+      &:after {
+        left: -2px;
+        background-position: left bottom;
+      }
+    }
+    &.pagination__next {
+      right: 0;
+
+      &:before {
+        right: 2px;
+        background-position: right top;
+      }
+      &:after {
+        right: 2px;
+        background-position: right bottom;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .pagination {
+    padding: 0 170px;
+
+    a {
+      margin: 0 6.1px;
+
+      &.pagination__prev,
+      &.pagination__next{
+        top: 0;
+        width: auto;
+        height: auto;
+        text-indent: 0;
+      }
+      &.pagination__prev {
+        top: 7px;
+        left: 2px;
+        padding-left: 37px;
+      }
+      &.pagination__next {
+        top: 7px;
+        right: -1px;
+        padding-right: 40px;
+      }
+    }
+  }
+
+}
+
+@media (min-width: $desktop) {
+
+}

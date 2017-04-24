@@ -1,0 +1,62 @@
+/* --------------- language --------------- */
+.language{
+  position: absolute;
+  display: inline-block;
+  top: 12px;
+  right: 15px;
+
+  li {
+    vertical-align: top;
+    display: inline-block;
+    color: $languages-color;
+    line-height: 25px;
+    font-size: 12px;
+    text-transform: uppercase;
+    cursor: pointer;
+    -webkit-transition: color .3s;
+    transition: color .3s;
+
+    &.active {
+      cursor: default;
+      font-size: 15px;
+      color: $languages-active-color;
+    }
+    &:hover {
+      color: $languages-active-color;
+    }
+  }
+
+}
+/* --------------- /language --------------- */
+
+@media (min-width: $tablet-portrait) {
+
+
+
+}
+@media (min-width: $tablet-landscape) {
+
+  /* --------------- language --------------- */
+  .language{
+    position: absolute;
+    right: auto;
+    top: 61px;
+    left: 192px;
+
+    li {
+      margin: 0 13px 0 0;
+
+      &.active {
+        font-size: 18px;
+      }
+    }
+  }
+  /* --------------- /language --------------- */
+
+}
+@media (min-width: $desktop) {
+
+
+}
+
+

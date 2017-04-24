@@ -1,0 +1,122 @@
+.websters-select {
+  overflow: hidden;
+  vertical-align: middle;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 60px;
+  border-radius: 30px;
+  padding: 1px 30px 0;
+  font-size: 16px;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  @include main-font5();
+  border: 2px solid $websters-select-border;
+  background: $websters-select-back;
+
+  &_opened {
+    border: 2px solid $websters-select-opened;
+    
+    .websters-select__item {
+      color: $websters-select-opened;
+    }
+    .websters-select__arrow {
+      transform: rotate(180deg);
+    }
+
+  }
+
+  &__arrow{
+    position: absolute;
+    top: 50%;
+    right: 19px;
+    //bottom: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: $websters-select-item-color transparent transparent transparent;
+    margin-top: -3px;
+    transform-origin: center;
+    -webkit-transition: -webkit-transform 200ms ease-in-out;
+    transition: transform 200ms ease-in-out;
+  }
+
+  &__item {
+    overflow: hidden;
+    @include absoluteCenterY();
+    right: 30px;
+    left: 25px;
+    padding: 1px 5px 0;
+    box-sizing: border-box;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-align: left;
+    color: $websters-select-item-color;
+  }
+
+  &_mobile {
+
+    select {
+      position: absolute;
+      top: 0;
+      bottom: -1px;
+      left: 1px;
+      width: 100%;
+    }
+
+  }
+
+  &_custom {
+
+    select {
+      position: absolute;
+      left: -100000px;
+    }
+
+  }
+
+  &__popup {
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    box-sizing: border-box;
+    border: 2px solid $websters-select-border;
+    background: $websters-select-border;
+    border-radius: 27px;
+
+    ul {
+      z-index: 1;
+    }
+
+    li {
+      padding: 10px 19px;
+      white-space: nowrap;
+      overflow: hidden;
+      background: transparent;
+      cursor: pointer;
+      color: $websters-select-item-color;
+      background: $websters-select-back;
+      @include main-font5();
+      -webkit-transition: background .3s, color .3s;
+      transition: background .3s, color .3s;
+
+      &:hover {
+        color: $websters-select-back;
+        background: $websters-select-border;
+      }
+
+      &.active {
+        color: $websters-select-back;
+        background: $websters-select-border !important;
+      }
+
+    }
+
+    &_2 {
+      border-radius: 0;
+      border: 1px solid $websters-select-border;
+    }
+  }
+}

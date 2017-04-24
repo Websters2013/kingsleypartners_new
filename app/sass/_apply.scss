@@ -1,0 +1,48 @@
+
+.apply {
+  padding: 40px 15px;
+  margin-bottom: 25px;
+  background: $main-blue-color;
+  text-align: center;
+
+  span {
+    display: block;
+    margin-bottom: 25px;
+    font-size: 26px;
+    line-height: 29px;
+    color: $apply-back;
+    @include main-font2();
+    font-style: italic;
+
+    strong {
+      @include main-font3();
+      font-style: normal;
+    }
+  }
+  a {
+    padding: 0 40px;
+    line-height: 46px;
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .apply {
+    padding: 54px 15px 60px;
+    margin-bottom: 60px;
+
+    span {
+      margin-bottom: 25px;
+      font-size: 30px;
+      line-height: 32px;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+}

@@ -1,0 +1,282 @@
+
+.application {
+  position: relative;
+  background: $application-back;
+  max-width: 870px;
+  margin: 0 15px;
+  padding: 40px 15px;
+  box-shadow: 0 1px 30px 0 rgba(0, 1, 1, 0.3);
+
+  &__form {
+
+    .btn_send {
+      width: 100%;
+    }
+  }
+  &__title {
+    margin-bottom: 25px;
+    margin-left: -3px;
+    font-size: 30px;
+    line-height: 35px;
+    color: $main-blue-color;
+    letter-spacing: -0.8px;
+    @include main-font3();
+  }
+  &__support {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    dt,
+    dd {
+      display: inline-block;
+      vertical-align: top;
+    }
+    dt {
+      margin-right: 23px;
+      margin-bottom: 10px;
+      color: $main-blue-color;
+      font-size: 16px;
+      @include main-font3();
+    }
+    dd {
+      margin-top: 2px;
+      font-size: 14px;
+      color: $main-orange-color;
+      letter-spacing: -0.3px;
+      @include main-font10();
+    }
+  }
+
+  fieldset {
+    width: 100%;
+    margin-bottom: 20px;
+
+    input,
+    textarea {
+      width: 100%;
+      height: 60px;
+      border-radius: 30px;
+      border: 2px solid $application-input-border;
+      padding: 1px 30px 0;
+      font-size: 16px;
+      line-height: 50px;
+      color: $application-input-color;
+      letter-spacing: 0.6px;
+      @include main-font5();
+      -webkit-transition: color .3s, border-color .3s;
+      transition: color .3s, border-color .3s;
+
+      &::-webkit-input-placeholder {
+        color: $application-input-color;
+        -webkit-transition: color .3s;
+        transition: color .3s;
+      }
+      &:-moz-placeholder {
+        color: $application-input-color;
+        -webkit-transition: color .3s;
+        transition: color .3s;
+      }
+      &.placeholder {
+        color: $application-input-color;
+        -webkit-transition: color .3s;
+        transition: color .3s;
+      }
+      &:focus {
+        color: $main-blue-color;
+        border-color: $main-blue-color;
+
+        &::-webkit-input-placeholder {
+          color: transparent;
+        }
+        &:-moz-placeholder {
+          color: transparent;
+        }
+        &.placeholder {
+          color: transparent;
+        }
+      }
+    }
+    textarea {
+      overflow: hidden;
+      height: 240px;
+    }
+
+    &.application__double {
+
+      input,
+      label,
+      button {
+        margin-bottom: 20px;
+
+        &:nth-child(2) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    &.application__file {
+      input {
+        display: none;
+      }
+      label {
+        display: block;
+        height: 60px;
+        border: 2px dashed $application-input-border;
+        border-radius: 30px;
+        font-size: 16px;
+        line-height: 59px;
+        text-align: center;
+        color: $application-input-color;
+        letter-spacing: 0.5px;
+        @include main-font5();
+        -webkit-transition: color .3s, border-color .3s;
+        transition: color .3s, border-color .3s;
+
+        i {
+          position: relative;
+          top: 1px;
+          margin-right: 8px;
+        }
+
+        &:hover {
+          color: $main-blue-color;
+          border-color: $main-blue-color;
+
+          i {
+            color: $main-blue-color;
+          }
+        }
+      }
+    }
+  }
+  .popup__close {
+    top: 7px;
+    right: 15px;
+  }
+}
+
+.application_wide {
+  //max-width: none;
+  //margin: 0;
+  //padding: 40px 0;
+
+  .application__support {
+
+    dt,
+    dd{
+      display: block;
+      margin: 0 0 10px 0;
+    }
+  }
+  .popup__close {
+    @include absoluteCenterX();
+    top: auto;
+    right: auto;
+    bottom: -59px;
+    padding: 0 44px;
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .application {
+    padding: 72px 150px 80px;
+
+    &__title {
+      margin-bottom: 54px;
+      padding-right: 120px;
+    }
+    &__support {
+      margin-top: 30px;
+      margin-bottom: 58px;
+
+      dt {
+        margin-bottom: 0;
+      }
+    }
+    &__wrap {
+      vertical-align: top;
+      display: inline-block;
+      width: 48.7%;
+      margin-right: 2.2%;
+      white-space: normal;
+    }
+    fieldset {
+
+      &.application__double {
+        overflow: hidden;
+
+        input,
+        label,
+        button {
+          float: left;
+          width: 47.6%;
+          margin-bottom: 0;
+          white-space: nowrap;
+
+          &:nth-child(2),
+          button {
+            float: right;
+          }
+        }
+        button {
+          float: right;
+        }
+      }
+    }
+    .popup__close {
+      top: 75px;
+      right: 150px;
+    }
+  }
+  .application_wide {
+    padding: 72px 40px 34px;
+
+    .application__wrap {
+      display: block;
+      width: 100%;
+      margin-right: 0;
+      white-space: normal;
+    }
+    .popup__close {
+      @include absoluteCenterX();
+      top: auto;
+      right: auto;
+      bottom: -74px;
+    }
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+
+
+
+}
+
+@media (min-width: $desktop) {
+
+  .application {
+    margin: 0 auto;
+  }
+
+  .application_wide {
+    max-width: none;
+    padding: 72px 150px 34px;
+
+    .application__form {
+      white-space: nowrap;
+    }
+    .application__wrap {
+      vertical-align: top;
+      display: inline-block;
+      width: 48.7%;
+      margin-right: 2.2%;
+      white-space: normal;
+    }
+    .popup__close {
+      @include absoluteCenterX();
+      top: auto;
+      right: auto;
+      bottom: -74px;
+    }
+  }
+}
