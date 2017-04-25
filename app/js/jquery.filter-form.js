@@ -37,7 +37,7 @@
 
                 var activeLabel = _categoryRadioLabel.filter('.active');
 
-                if (activeLabel.length) {
+                if ( activeLabel.length ) {
 
                     _checkSubCategory( true , activeLabel.data('parent_category_id'));
 
@@ -49,10 +49,12 @@
             },
             _checkSubCategory = function ( check , parent_category_id) {
 
+                console.log(check, _filterCategoryWrap.length, parent_category_id);
+
                 if ( check ) {
                     
                     _filterCategoryWrap.slideUp( 300 );
-                    _filterCategoryWrap.filter('#categories_' + parent_category_id).slideDown( 300 );
+                    _filterCategoryWrap.filter('#'+parent_category_id+'').slideDown( 300 );
 
                 }else if ( !check ) {
 
@@ -129,11 +131,8 @@
 
                         _unCheckedCategory( $(this) );
 
-
-
                     }
                 });
-
 
             },
             _sendForm = function(){
@@ -152,7 +151,6 @@
             _setZipCodes = function () {
 
                 var activeItems = _mapPath.filter( '.active' );
-                    // mapSelectOption = _mapSelect.find( 'option:selected' );
 
                 _zipCodesArr = [];
                 _mapHiddenInput.val('');
@@ -162,22 +160,19 @@
                     var curItem = $( this ),
                         curCode = curItem.data( 'zip' );
 
-                    if ( curCode != undefined ) {
 
-                        _zipCodesArr.push( curCode.replace(/\s+/g, '') ) ;
+                    console.log(curCode);
+
+
+                    if ( curCode !== undefined ) {
+
+                        _zipCodesArr.push( curCode ) ;
 
                     }
 
                 });
 
-                // if ( _mapSelect.parent().hasClass( 'active' ) ) {
-                //
-                //     _zipCodesArr.push( mapSelectOption.data( 'zip' ) )
-                //
-                // }
-
                 _mapHiddenInput.val( _zipCodesArr );
-
 
             },
             _setActivePath = function ( elem ) {
@@ -194,11 +189,11 @@
                     curItem.removeClass( 'active' )
                 }
 
-                if (curItem.hasClass( 'bruxelles' ) && !selectParent.hasClass( 'active' )) {
+                if (curItem.hasClass( 'laeken' ) && !selectParent.hasClass( 'active' )) {
 
                     selectParent.addClass( 'active' )
 
-                }else if( curItem.hasClass( 'bruxelles' ) && selectParent.hasClass( 'active' ) ){
+                }else if( curItem.hasClass( 'laeken' ) && selectParent.hasClass( 'active' ) ){
 
                     selectParent.removeClass( 'active' )
 
@@ -268,7 +263,7 @@
                 }
 
             },
-            _unCheckedCategory = function (elem) {
+            _unCheckedCategory = function ( elem ) {
 
                 var curItem = elem,
                     curRadio = curItem.prev();
@@ -286,11 +281,11 @@
                 } else if( !curItem.hasClass( 'active' ) ) {
 
                     curRadio[0].checked = true;
-                    _categoryRadioLabel.removeClass('active');                    
+                    _categoryRadioLabel.removeClass( 'active' );
 
-                    curItem.addClass('active');
+                    curItem.addClass( 'active' );
                     _checkCategory();
-                    curRadio.trigger('check-change');
+                    curRadio.trigger( 'check-change' );
                 }
             };
 

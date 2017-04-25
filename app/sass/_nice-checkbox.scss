@@ -15,7 +15,7 @@
     display: inline-block;
     font-size: 16px;
     color: $main-blue-color;
-    @include main-font10();
+    @include main-font2();
     cursor: pointer;
     -webkit-transition: opacity .3s, color .3s;
     transition: opacity .3s, color .3s;
@@ -36,7 +36,7 @@
 
     &:checked + label {
       border: 2px solid $main-orange-color;
-      box-shadow: 0 2px 8px 0 rgba(253, 59, 67, 0.3);
+      box-shadow: 0 2px 8px 0 rgba(250, 176, 64, 0.3);
       background: $main-orange-color !important;
       color: $nice-radio-checked-color;
       cursor: default;
@@ -54,20 +54,20 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 36px;
-    padding: 0 15px;
-    border: 2px solid $main-blue-color;
+    height: 44px;
+    padding: 2px 19px 0;
+    border: 2px solid #ddd;
     border-radius: 40px;
     color: $main-blue-color;
     cursor: pointer;
     font-size: 15px;
-    @include main-font10();
-    -webkit-transition: color .3s, background .3s;
-    transition: color .3s, background .3s;
+    @include main-font1();
+    @include transition(all, .3, 0);
 
     &:hover {
       color: $nice-radio-checked-color;
       background: $main-blue-color;
+      border-color: $main-blue-color;
     }
   }
 }

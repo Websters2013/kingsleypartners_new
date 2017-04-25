@@ -9,7 +9,7 @@
 
     &:checked + label {
       border: 2px solid $main-orange-color;
-      box-shadow: 0 2px 8px 0 rgba(253, 59, 67, 0.3);
+      box-shadow: 0 2px 8px 0 rgba(250, 176, 64, 0.3);
       background: $main-orange-color !important;
       color: $nice-radio-checked-color;
       cursor: default;
@@ -29,18 +29,19 @@
     align-items: center;
     height: 36px;
     padding: 0 15px;
-    border: 2px solid $main-blue-color;
+    border: 2px solid #ddd;
     border-radius: 40px;
     color: $main-blue-color;
     cursor: pointer;
     font-size: 15px;
-    @include main-font10();
-    -webkit-transition: color .3s, background .3s;
-    transition: color .3s, background .3s;
+    letter-spacing: 0.5px;
+    @include main-font1();
+    @include transition(all, .3, 0);
 
     &:hover {
       color: $nice-radio-checked-color;
       background: $main-blue-color;
+      border-color: $main-blue-color;
     }
   }
 }

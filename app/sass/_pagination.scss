@@ -15,14 +15,14 @@
     font-size: 18px;
     color: $main-text-color;
     text-align: center;
-    @include main-font8();
+    @include main-font4();
     font-weight: 900;
     -webkit-transition: border-color .3s, color .3s;
     transition: border-color .3s, color .3s;
 
     &.active,
     &:hover {
-      border-color: $main-blue-color;
+      border-color: $main-orange-color;
       color: $main-blue-color;
     }
     &.active {
@@ -41,7 +41,7 @@
       text-indent: -10000px;
       font-size: 17px;
       letter-spacing: 0.2px;
-      @include  main-font10();
+      @include  main-font1();
 
       &:after,
       &:before {
@@ -106,10 +106,10 @@
 @media (min-width: $tablet-landscape) {
 
   .pagination {
-    padding: 0 170px;
+    padding: 0 170px 0 181px;
 
     a {
-      margin: 0 6.1px;
+      margin: 0 7.2px;
 
       &.pagination__prev,
       &.pagination__next{

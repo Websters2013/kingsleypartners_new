@@ -40,7 +40,7 @@
     font-size: 24px;
     color: $main-blue-color;
     @include main-font3();
-    letter-spacing: -0.6px;
+    letter-spacing: 0;
   }
   &__aside-subtitle {
     display: block;
@@ -49,7 +49,7 @@
     color: $main-blue-color;
     @include main-font3();
     text-transform: uppercase;
-    letter-spacing: -0.4px;
+    letter-spacing: 1.4px;
   }
   &__aside-item {
     position: relative;
@@ -66,11 +66,14 @@
     font-size: 14px;
     line-height: 1;
     color: $main-text-color;
+    text-transform: uppercase;
+    letter-spacing: 0.7px;
     @include  main-font5();
 
     i {
       position: relative;
       top: -1px;
+      margin-right: 3px;
       font-size: 10px;
     }
     &:after {
@@ -98,10 +101,14 @@
     text-align: center;
   }
   &__aside-map {
+    padding-bottom: 110px;
     user-select: none;
 
     svg {
-      margin-top: -20px;
+      position: relative;
+      left: -19px;
+      margin-top: 4px;
+      margin-left: 38px;
       user-select: none;
 
       path {
@@ -153,7 +160,6 @@
     .websters-select__arrow {
       border-color: $main-orange-color transparent transparent transparent;
     }
-
   }
   &__result {
 
@@ -169,8 +175,7 @@
       line-height: 1;
       letter-spacing: 0.3px;
       color: $main-blue-color;
-      @include  main-font8();
-      font-weight: 900;
+      @include  main-font5();
     }
     fieldset {
       position: relative;
@@ -189,11 +194,36 @@
       line-height: 60px;
       letter-spacing: -0.3px;
       color: $search-research-color;
-      @include main-font5();
+      @include main-font1();
+
+      &::-webkit-input-placeholder {
+        color:$search-research-color;
+        @include transition(color, .2, 0)
+      }
+      &:-moz-placeholder {
+        color:$search-research-color;
+        @include transition(color, .2, 0)
+      }
+      &:-ms-input-placeholder {
+        color:$search-research-color;
+        @include transition(color, .2, 0)
+      }
+      &:focus {
+
+        &::-webkit-input-placeholder {
+          color: transparent;
+        }
+        &:-moz-placeholder {
+          color: transparent;
+        }
+        &:-ms-input-placeholder {
+          color: transparent;
+        }
+      }
     }
     button {
       bottom: -10px;
-      padding: 0 36px;
+      padding: 0 45px;
     }
   }
   &__result-list {
@@ -219,7 +249,7 @@
     margin-bottom: 10px;
     font-size: 20px;
     line-height: 25px;
-    letter-spacing: -0.1px;
+    letter-spacing: -0.3px;
     color: $main-blue-color;
     @include main-font2();
   }
@@ -263,18 +293,17 @@
         line-height: 1;
         color: $main-text-color;
         text-transform: uppercase;
-        @include  main-font8();
-        font-weight: 900;
+        letter-spacing: 1.3px;
+        @include  main-font5();
       }
       dd {
         font-size: 16px;
         line-height: 28px;
         color: $main-blue-color;
-        @include main-font10();
+        @include main-font1();
 
         strong {
-          @include  main-font8();
-          font-weight: 900;
+          @include  main-font3();
         }
       }
     }
@@ -308,9 +337,9 @@
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 16px;
+    font-size: 22px;
     color: $main-blue-color;
-    @include main-font10();
+    @include main-font1();
 
   }
 }
@@ -392,11 +421,11 @@
 @media (min-width: $desktop) {
 
   .search {
-    padding: 71px 0;
+    padding: 71px 0 60px;
 
     &__aside {
       max-width: 525px;
-      padding: 56px 60px 60px;
+      padding: 57px 59px 60px;
     }
     &__aside-form {
 
@@ -405,14 +434,14 @@
       }
     }
     &__aside-title {
-      margin-bottom: 27px;
+      margin-bottom: 26px;
       font-size: 24px;
     }
     &__aside-subtitle {
-      margin-bottom: 28px;
+      margin-bottom: 27px;
     }
     &__aside-item {
-      margin-bottom: 50px;
+      margin-bottom: 51px;
     }
     &__aside-map {
 
@@ -436,16 +465,19 @@
         top: 6px;
         right: 5px;
       }
+      fieldset {
+        padding-right: 192px;
+      }
     }
     &__result-item {
-      padding: 54px 60px 0;
+      padding: 56px 59px 0;
     }
     &__result-item-title {
       font-size: 30px;
       line-height: 32px;
     }
     &__result-item-subtitle {
-      margin-bottom: 25px;
+      margin-bottom: 21px;
       font-size: 24px;
       line-height: 32px;
     }
@@ -478,7 +510,7 @@
       }
     }
     &__result-item-text {
-      margin-bottom: 51px;
+      margin-bottom: 53px;
       font-size: 18px;
       line-height: 30px;
     }
@@ -491,7 +523,7 @@
         display: flex;
         flex-flow: column;
         justify-content: center;
-        width: 30%;
+        width: 21.8%;
         min-height: 122px;
         margin-left: -4px;
         padding: 10px 3%;
@@ -510,6 +542,8 @@
         }
 
         &:nth-child(2) {
+          width: 30.6%;
+          padding: 16px 5.1% 10px 5.5%;
           border-right: 3px solid $search-result-border;
         }
       }
@@ -566,7 +600,7 @@
       width: 1125px;
     }
     &__result-item {
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
     &__result-item-title {
       padding-right: 180px;
@@ -577,7 +611,7 @@
     &__result-item-footer {
 
       dl {
-        padding: 10px 5.1% 10px 5.8%;
+        padding: 16px 5.1% 10px 5.8%;
       }
       div {
         display: inline-block;
@@ -590,10 +624,13 @@
           line-height: 46px;
           padding: 0 40px;
           font-size: 16px;
-          margin: 0 10px;
+          margin: 0 12px;
+
+          &:last-child {
+            margin: 0 16px;
+          }
         }
       }
     }
   }
-
 }
