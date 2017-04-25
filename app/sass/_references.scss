@@ -1,17 +1,17 @@
 
 .references{
-  padding: 66px 0 57px;
+  padding: 40px 0;
 
   &__title {
-    margin-bottom: 40px;
-    font-size: 36px;
+    margin-bottom: 20px;
+    font-size: 30px;
     color: $main-blue-color;
     text-align: center;
     @include main-font3();
   }
   &__gallery {
     position: relative;
-    padding: 0 200px;
+    padding: 0 20px;
 
     .swiper-container {
       height: 177px;
@@ -56,7 +56,7 @@
       }
     }
     .swiper-button-prev {
-      left: 50px;
+      left: 10px;
 
       svg {
         -webkit-transform: rotate(180deg);
@@ -64,7 +64,7 @@
       }
     }
     .swiper-button-next {
-      right: 50px;
+      right: 10px;
     }
   }
   &__gallery-item {
@@ -95,7 +95,19 @@
 
 @media (min-width: $tablet-portrait) {
 
+  .references{
 
+    &__gallery {
+      padding: 0 200px;
+
+      .swiper-button-prev {
+        left: 50px;
+      }
+      .swiper-button-next {
+        right: 50px;
+      }
+    }
+  }
 }
 @media (min-width: $tablet-landscape) {
 
@@ -103,7 +115,14 @@
 }
 @media (min-width: $desktop) {
 
+  .references{
+    padding: 66px 0 57px;
 
+    &__title {
+      margin-bottom: 40px;
+      font-size: 36px;
+    }
+  }
 }
 
 

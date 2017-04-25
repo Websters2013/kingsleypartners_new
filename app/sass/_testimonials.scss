@@ -18,11 +18,9 @@
       color: $main-text-color;
       @include main-font9();
       letter-spacing: -0.4px;
-      //font-style: italic;
 
       strong {
         @include main-font8();
-        //font-weight: 700;
       }
     }
   }
@@ -87,15 +85,9 @@
     }
   }
   .swiper-container {
-    max-width: 900px;
+    max-width: 870px;
     margin: 0 auto;
 
-    .swiper-wrapper {
-
-    }
-    .swiper-slide {
-
-    }
     .swiper-pagination {
       bottom: 2px;
 
@@ -168,7 +160,7 @@
     }
     &__info-text {
       height: 143px;
-      width: 595px;
+      width: 565px;
 
       p {
         font-size: 24px;

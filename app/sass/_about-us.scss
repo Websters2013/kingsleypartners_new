@@ -202,7 +202,7 @@
     .swiper-button-prev {
       left: 130px;
       top: auto;
-      bottom: 86px;
+      bottom: 74px;
       margin: 0;
       width: 80px;
       height: 80px;
@@ -243,7 +243,7 @@
 
     }
     .about-us__text {
-      max-height: 180px;
+      max-height: 104px;
       margin-left: 2px;
       max-width: 700px;
     }
@@ -278,6 +278,7 @@
 
         dl {
           padding: 20px 5%;
+          width: 33.7%;
 
           dt {
             font-size: 13px;
@@ -322,7 +323,6 @@
       max-width: 45%;
     }
     &__slider {
-      //min-height: 500px;
       height: 100%;
       padding: 0 20px;
 
@@ -541,7 +541,7 @@
       }
       .about-us__text {
         max-height: 120px;
-        margin-bottom: 30px;
+        margin-bottom: 12px;
       }
 
       > .btn {
@@ -557,7 +557,6 @@
   .about-us {
 
     &__slider {
-      //min-height: 464px;
 
       &-item {
         //padding: 32px 75px 120px;
@@ -582,6 +581,9 @@
     }
     &__offers {
 
+      .about-us__text {
+        margin-bottom: 30px;
+      }
       .swiper-button-next,
       .swiper-button-prev {
         right: 109px;

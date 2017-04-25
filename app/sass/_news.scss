@@ -1,16 +1,17 @@
 
 .news {
-  padding: 117px 0 50px;
+  padding: 40px 0;
 
   &__title {
-    margin-bottom: 63px;
-    font-size: 36px;
+    margin-bottom: 20px;
+    font-size: 30px;
     color: $main-blue-color;
     text-align: center;
     @include main-font3();
   }
   &__list {
     position: relative;
+    padding: 0 30px;
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -37,7 +38,7 @@
       }
     }
     .swiper-button-prev {
-      left: -77px;
+      left: 0;
 
       svg {
         -webkit-transform: rotate(180deg);
@@ -45,13 +46,13 @@
       }
     }
     .swiper-button-next {
-      right: -77px;
+      right: 0;
     }
   }
   &__item {
     width: 30%;
     margin: 0;
-    padding: 51px 39px 87px;
+    padding: 20px 15px 87px;
     border: 2px solid #eee;
     box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0);
     @include transition( all, .2, 0 );
@@ -85,17 +86,17 @@
   &__item-title {
     overflow: hidden;
     height: 80px;
-    margin-bottom: 24px;
-    font-size: 30px;
-    line-height: 40px;
+    margin-bottom: 20px;
+    font-size: 25px;
+    line-height: 27px;
     color: $main-blue-color;
     font-weight: 400;
   }
   &__item-text {
     overflow: hidden;
     height: 208px;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 16px;
+    line-height: 20px;
     letter-spacing: -0.1px;
     color: $main-text-color;
     @include main-font7();
@@ -104,7 +105,7 @@
     position: absolute;
     display: inline-block;
     bottom: 50px;
-    left: 40px;
+    left: 15px;
     font-size: 13px;
     line-height: 30px;
     color: $main-blue-color;
@@ -132,6 +133,12 @@
 
 @media (min-width: $tablet-portrait) {
 
+  .news {
+
+    &__item-text {
+      height: 250px;
+    }
+  }
 
 }
 @media (min-width: $tablet-landscape) {
@@ -140,7 +147,41 @@
 }
 @media (min-width: $desktop) {
 
+  .news {
+    padding: 117px 0 50px;
 
+    &__title {
+      margin-bottom: 63px;
+      font-size: 36px;
+    }
+    &__list {
+      padding: 0;
+
+      .swiper-button-prev {
+        left: -77px;
+      }
+      .swiper-button-next {
+        right: -77px;
+      }
+    }
+    &__item {
+      padding: 51px 39px 87px;
+    }
+    &__item-title {
+      height: 80px;
+      margin-bottom: 24px;
+      font-size: 30px;
+      line-height: 40px;
+    }
+    &__item-text {
+      height: 208px;
+      font-size: 18px;
+      line-height: 26px;
+    }
+    &__item-link {
+      left: 40px;
+    }
+  }
 }
 
 
