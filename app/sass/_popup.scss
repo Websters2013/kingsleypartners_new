@@ -28,21 +28,14 @@
   &__wrap {
     position: relative;
     z-index: 2;
-    //max-width: 700px;
     display: inline-block;
     margin: 0 auto;
     padding-bottom: 40px;
-
-    //&_top {
-    //  top: -40px !important;
-    //  display: block;
-    //}
   }
 
   &__content {
     display: none;
     text-align: left;
-    //padding: 20px 0;
   }
 
   &__close {
@@ -52,32 +45,6 @@
     cursor: pointer;
     height: 34px;
     padding: 7px 19px;
-
-    //&:after,
-    //&:before {
-    //  position: absolute;
-    //  top: 50%;
-    //  left: 0;
-    //  right: 0;
-    //  height: 3px;
-    //  background: $popup-close-back;
-    //  transform-origin: center;
-    //  content: '';
-    //}
-    //&:after{
-    //  transform: translateY( 50% ) rotate( 45deg );
-    //}
-    //&:before {
-    //  transform: translateY( 50% ) rotate( -45deg );
-    //}
-    //
-    //&:hover {
-    //  opacity: 0.8;
-    //}
-    //
-    //&:active {
-    //  background-position: 0 bottom;
-    //}
   }
 
   &__scrollbar-measure {

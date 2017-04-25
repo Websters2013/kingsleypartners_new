@@ -1,10 +1,6 @@
 .about-us {
   position: relative;
-  //padding: 90px 0 40px;
 
-  //.site__centered {
-  //  max-width: 1565px;
-  //}
   &__wrap {
     padding: 40px 0;
   }
@@ -55,15 +51,7 @@
       position: absolute;
     }
     &-item {
-      //opacity: 0;
-      //visibility: hidden;
-      //top: 0;
-      //left: 0;
-      //right: 0;
-      //bottom: 0;
       padding: 15px 15px 67px;
-      //background: $about-us-slider-back;
-      //box-shadow: 0 2px 6px 0 rgba(0, 1, 1, 0.08);
 
       &.active {
         visibility: visible !important;
@@ -109,14 +97,12 @@
       left: 0;
       right: 0;
       bottom: 0;
-      //border-top: 3px solid $about-us-slider-border;
 
       dl {
         display: inline-block;
         vertical-align: top;
         width: 48.7%;
         padding: 15px 3% 15px;
-        //border-right:3px solid $about-us-slider-border;
 
         &:last-child {
           border-right: none;
@@ -457,14 +443,8 @@
       &-item {
         height: 100%;
         padding: 32px 32px 120px;
-
-        //> span {
-          //max-height: 62px;
-          //margin-bottom: 25px;
-          //font-size: 24px;
-          //line-height: 32px;
-        //}
       }
+
       &-title {
         max-height: 65px;
         margin-bottom: 2px;
@@ -515,27 +495,6 @@
       width: 49.2%;
       padding: 154px 0;
 
-      .swiper-button-next,
-      .swiper-button-prev {
-        //right: 40px;
-        //left: auto;
-        //margin: 0;
-        //top: auto;
-        //bottom: 27px;
-
-        &:after {
-          //left: 42%;
-        }
-
-      }
-      .swiper-button-prev {
-        //right: 125px;
-
-        &:after {
-          //left: 54%;
-        }
-
-      }
       .about-us__title {
         padding: 0 0 0 118px;
       }
@@ -558,14 +517,9 @@
 
     &__slider {
 
-      &-item {
-        //padding: 32px 75px 120px;
-      }
       &-footer {
 
         dl {
-          //padding: 39px 11% 31px 3.6%;
-          //width: auto;
           max-width: 372px;
         }
       }
