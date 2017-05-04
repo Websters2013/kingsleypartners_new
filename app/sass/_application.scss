@@ -83,7 +83,7 @@
       }
       &:focus {
         color: $main-blue-color;
-        border-color: $main-blue-color;
+        border-color: $main-orange-color;
 
         &::-webkit-input-placeholder {
           color: transparent;
@@ -139,7 +139,7 @@
 
         &:hover {
           color: $main-blue-color;
-          border-color: $main-blue-color;
+          border-color: $main-orange-color;
 
           i {
             color: $main-blue-color;

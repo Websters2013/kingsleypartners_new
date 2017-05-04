@@ -306,12 +306,13 @@
         margin: 0 auto;
         font-size: 23px;
         line-height: 27px;
+        @include main-font1();
 
         span {
           margin-bottom: 13px;
         }
         strong {
-          @include main-font8();
+          @include main-font3();
         }
       }
     }
@@ -435,7 +436,7 @@
       &_team,
       &_about,
       &_contact {
-        //padding: 79px 0 76px;
+        min-height: 556px;
       }
     }
   }

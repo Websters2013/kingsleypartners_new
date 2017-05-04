@@ -8,7 +8,7 @@
     color: $testimonials-title-color;
     text-align: center;
     letter-spacing: -0.4px;
-    @include main-font3();
+    @include main-font1();
 
     span {
       display: block;
@@ -67,7 +67,7 @@
     span {
       padding-left: 5px;
       color: $main-text-color;
-      @include main-font2();
+      @include main-font1();
     }
   }
   &__info-rate {
