@@ -59,6 +59,16 @@
   font-weight: 400;
   font-style: normal;
 }
+@mixin main-font13() {
+  font-family: "myriadpro-regular", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+@mixin main-font14() {
+  font-family: "myriadpro-bold", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
 
 //justify
 @mixin justify() {

@@ -1,0 +1,310 @@
+.values {
+  padding: 40px 0 20px;
+
+  &__title {
+    margin-bottom: 40px;
+    font-size: 35px;
+    color: #3c4f71;
+    text-align: center;
+    letter-spacing: -0.6px;
+    @include main-font3();
+
+    span {
+      display: block;
+      margin-top: 13px;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: 0.3px;
+      color: $main-text-color;
+      @include main-font9();
+      font-style: italic;
+
+      strong {
+        @include main-font8();
+        font-weight: 700;
+      }
+    }
+  }
+  &__list {
+    text-align: center;
+  }
+  &__list-item {
+    display: block;
+    max-width: 320px;
+    margin: 0 auto 20px;
+    padding: 0 3.5%;
+    text-align: center;
+
+    span {
+      display: block;
+      margin-bottom: 5px;
+      font-size: 25px;
+      line-height: 28px;
+      letter-spacing: -0.8px;
+      @include  main-font2();
+    }
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      color: $main-text-color;
+      @include  main-font7();
+    }
+
+    &:hover {
+
+      .values__list-pic {
+        background: transparent;
+
+        path {
+          fill: $main-blue-color;
+        }
+      }
+    }
+  }
+  &__list-pic {
+    position: relative;
+    display: block;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: $main-blue-color;
+    border: 3px solid $main-blue-color;
+    @include transition(all, .3, 0);
+
+    svg {
+      @include absoluteCenter();
+
+
+      path {
+        fill: $values-icon-color;
+        @include transition(fill, .3, 0);
+      }
+    }
+    &_certificate {
+
+      svg {
+        width: 70px;
+        height: 65px;
+      }
+    }
+    &_atomium {
+
+      svg {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    &_team {
+
+      svg {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    &_clock {
+
+      svg {
+        width: 70px;
+        height: 70px;
+      }
+    }
+    &_clean {
+
+      svg {
+        width: 70px;
+        height: 70px;
+      }
+    }
+  }
+}
+
+.values_about {
+  background: $main-blue-color;
+  @include main-font12;
+
+  .values__title {
+    color: $values-color2;
+  }
+  .values__list-item {
+
+    span {
+      color: $values-color2;
+    }
+
+    &:hover {
+
+      .values__list-pic {
+        transform: translateY(-10px);
+
+        path {
+          fill: $values-icon-color;
+        }
+      }
+    }
+  }
+  .values__list-pic {
+    background: $values-back2;
+    border: 3px solid $values-back2;
+    @include transition(all, .3, 0);
+
+    svg {
+
+      path {
+        fill: $main-blue-color;
+      }
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .values {
+
+    &__list {
+      text-align: center;
+    }
+    &__list-item {
+      opacity: 0;
+      vertical-align: top;
+      display: inline-block;
+      width: 45%;
+
+      a {
+
+        &:hover {
+
+          .values__list-pic {
+            transform: translateY(-10px)
+          }
+
+        }
+      }
+
+      &.animation {
+        animation: fade-in .3s forwards;
+      }
+    }
+  }
+
+  @keyframes fade-in {
+
+    0%{
+      transform: translateY(100px);
+      opacity: .2;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 1;
+    }
+
+  }
+  @-webkit-keyframes fade-in {
+    0%{
+      -webkit-transform: translateY(100px);
+      opacity: .2;
+    }
+    100%{
+      -webkit-transform: translateY(0px);
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+  .values {
+    @include flexbox();
+    @include flex-direction();
+    @include align-items(center);
+    @include justify-content(center);
+    min-height: 100vh;
+    padding: 70px 0 20px;
+
+    .site__centered {
+      margin: 0;
+    }
+
+    &__title {
+      margin-bottom: 60px;
+      font-size: 47px;
+
+      span {
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+    &__list-item {
+      width: 33%;
+      max-width: none;
+      margin-bottom: 51px;
+      padding: 0 3.5%;
+
+      span {
+        margin-bottom: 9px;
+        font-size: 30px;
+        line-height: 28px;
+      }
+      p {
+        font-size: 18px;
+        line-height: 28px;
+      }
+    }
+    &__list-pic {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 28px;
+
+      &_certificate {
+        svg {
+          width: 99px;
+          height: 85px;
+
+          width: 80px;
+          height: 80px;
+        }
+      }
+      &_atomium {
+
+        svg {
+          width: 100px;
+          height: 92px;
+
+          width: 80px;
+          height: 80px;
+        }
+      }
+      &_team {
+
+        svg {
+          width: 100px;
+          height: 92px;
+
+          width: 80px;
+          height: 80px;
+        }
+      }
+      &_clock {
+
+        svg {
+          width: 100px;
+          height: 100px;
+
+          width: 80px;
+          height: 80px;
+        }
+      }
+      &_clean {
+
+        svg {
+          width: 100px;
+          height: 99px;
+
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+  }
+
+}

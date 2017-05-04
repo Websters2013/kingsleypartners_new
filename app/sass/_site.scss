@@ -230,7 +230,7 @@
 
       .site__hero-title {
         position: relative;
-        max-width: 670px;
+        max-width: 770px;
         margin: 0 auto;
         font-size: 20px;
         line-height: 27px;
@@ -350,6 +350,7 @@
     }
   }
 }
+
 @media (min-width: $tablet-landscape) {
   .site {
 
@@ -407,7 +408,7 @@
       }
     }
     &__hero {
-      min-height: 222px;
+      min-height: 554px;
       padding: 30px 0;
 
       &-title {
@@ -419,27 +420,34 @@
           font-size: 42px;
         }
       }
+
       &_about {
 
         .site__hero-title {
+          @include main-font13;
           font-size: 22px;
-          line-height: 32px;
+          font-style: normal;
+          line-height: 34px;
+          letter-spacing: 0;
 
           span {
             margin-bottom: 20px;
-            font-size: 46px;
+            @include main-font14;
+            font-size: 40px;
           }
+
+          strong{
+            @include main-font14;
+          }
+
         }
+
       }
-      &_search,
-      &_team,
-      &_about,
-      &_contact {
-        //padding: 79px 0 76px;
-      }
+
     }
   }
 }
+
 @media (min-width: $desktop) {
 
   .site {
@@ -463,20 +471,13 @@
       }
     }
     &__hero {
-      //padding: 206px 0 218px;
 
       &_about {
         background-position: center 84%;
         padding: 79px 0 76px;
       }
-      //&_search,
-      //&_team {
-      //  padding: 79px 0 76px;
-      //}
-      //&_contact {
-      //  padding: 79px 0 76px;
-      //}
     }
+
     &__footer {
       position: absolute;
       z-index: 2;
@@ -514,8 +515,11 @@
       }
     }
   }
+
 }
+
 @media (min-width: $desktop-wide) {
+
   .site {
 
     &__footer {
@@ -525,8 +529,12 @@
         &:after {
           right: -255px;
         }
+
       }
+
     }
+
   }
+
 }
 

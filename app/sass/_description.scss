@@ -1,0 +1,58 @@
+.description {
+  padding: 40px 0;
+
+  &__wrap {
+
+    p {
+      margin-bottom: 17px;
+      font-size: 16px;
+      line-height: 23px;
+      color: $main-text-color;
+      letter-spacing: -0.1px;
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .description {
+
+    .site__centered {
+      text-align: justify;
+
+      &:after {
+        display: inline-block;
+        width: 100%;
+        content: '';
+      }
+    }
+    &__wrap {
+      vertical-align: top;
+      display: inline-block;
+      width: 46.8%;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: $tablet-landscape) {
+
+  .description {
+    padding: 93px 0 49px;
+
+    &__wrap {
+
+      p {
+        margin-bottom: 25px;
+        font-size: 22px;
+        line-height: 32px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop) {
+
+
+
+}
