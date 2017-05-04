@@ -38,6 +38,26 @@ var paths = {
                 'app/js/jquery.websters-select.js',
                 'app/js/jquery.popup.js'
             ]
+        },
+        {
+            dist: 'about.min.js',
+            contains: [
+                'app/js/jquery.main.js',
+                'app/js/jquery.scroll-to.js',
+                'app/js/jquery.animation.js',
+                'app/js/jquery.popup.js',
+                'app/js/jquery.review.js'
+
+            ]
+        },
+        {
+            dist: 'contact-us.min.js',
+            contains: [
+                'app/js/jquery.main.js',
+                'app/js/jquery.websters-select.js',
+                'app/js/jquery.contact.js',
+                'app/js/jquery.popup.js'
+            ]
         }
     ],
     vendorScripts: 'app/js/vendors/**/*.js',

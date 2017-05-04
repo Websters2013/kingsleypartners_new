@@ -306,12 +306,13 @@
         margin: 0 auto;
         font-size: 23px;
         line-height: 27px;
+        @include main-font1();
 
         span {
           margin-bottom: 13px;
         }
         strong {
-          @include main-font8();
+          @include main-font3();
         }
       }
     }
@@ -435,13 +436,13 @@
             @include main-font14;
             font-size: 40px;
           }
-
-          strong{
-            @include main-font14;
-          }
-
         }
-
+      }
+      &_search,
+      &_team,
+      &_about,
+      &_contact {
+        min-height: 556px;
       }
 
     }
@@ -471,11 +472,19 @@
       }
     }
     &__hero {
+      //padding: 206px 0 218px;
 
       &_about {
         background-position: center 84%;
         padding: 79px 0 76px;
       }
+      //&_search,
+      //&_team {
+      //  padding: 79px 0 76px;
+      //}
+      //&_contact {
+      //  padding: 79px 0 76px;
+      //}
     }
 
     &__footer {

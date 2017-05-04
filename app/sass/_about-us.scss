@@ -11,7 +11,7 @@
     line-height: 1;
     color: $main-blue-color;
     letter-spacing: -0.2px;
-    @include main-font3();
+    @include main-font5();
   }
   &__text {
     overflow: hidden;
@@ -27,7 +27,7 @@
     display: block;
     font-size: 18px;
     line-height: 24px;
-    color: $main-blue-color;
+    color: #2a2b76;
     white-space: pre-line;
     @include main-font8();
   }
@@ -65,7 +65,7 @@
         line-height: 22px;
         color: $main-blue-color;
         letter-spacing: -0.3px;
-        @include main-font2()
+        @include main-font1()
       }
     }
     &-title {
@@ -76,7 +76,7 @@
       line-height: 25px;
       color: $main-blue-color;
       letter-spacing: -0.3px;
-      @include main-font3();
+      @include main-font5();
     }
     .btn {
       position: relative;
@@ -240,7 +240,7 @@
       bottom: 25px;
       left: 15px;
       height: auto;
-      padding: 8px 24px 6px;
+      padding: 9px 24px 5px;
       background: #f9fbfd;
 
       &:hover {
@@ -454,7 +454,8 @@
       .btn {
         padding: 0 38px;
         font-size: 18px;
-        line-height: 46px;
+        line-height: 49px;
+        height: 50px;
       }
       &-footer {
         left: 0;

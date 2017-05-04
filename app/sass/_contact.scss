@@ -1,0 +1,240 @@
+.contact {
+  padding: 31px 0 0;
+  background: $contact-back;
+
+  &__wrap {
+    position: relative;
+    margin-bottom: 30px;
+  }
+  &__form {
+    padding: 30px 15px;
+    margin: 0;
+    box-shadow: 0 1px 10px 0 rgba(0, 1, 1, 0.1);
+    background: transparent;
+    max-width: 100%;
+
+    .nice-radio_2 {
+      margin-right: 34px;
+      margin-bottom: 18px;
+    }
+    button {
+      width: 100%;
+    }
+  }
+  &__form-title {
+    margin-bottom: 30px;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: -0.8px;
+    color: $main-blue-color;
+    @include main-font3();
+  }
+  &__form-subtitle {
+    margin-bottom: 20px;
+    font-size: 12px;
+    line-height: 1;
+    text-transform: uppercase;
+    color: $main-blue-color;
+    @include main-font3();
+  }
+  &__form-item {
+    margin-bottom: 10px;
+  }
+  &__form-text {
+    margin-top: -5px;
+    padding-left: 2px;
+    text-align: center;
+
+    p,
+    a {
+      margin-bottom: 11px;
+      font-size: 14px;
+      line-height: 20px;
+      color: $main-text-color;
+      @include main-font7();
+    }
+    a {
+      @include main-font12();
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &__form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__form-col {
+    width: 45%;
+  }
+
+  &__map {
+    position: relative;
+    height: 360px;
+  }
+  &__map-canvas {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+  }
+  &__map-info {
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 88%;
+    max-width: 492px;
+    padding-left: 16%;
+    background-color: $main-orange-color;
+    color: $contact-map-main-color;
+    //transform: translateX(90%);
+    //transition: transform .3s ease-in-out, background .3s ease-in-out;
+
+    &.open {
+      //transform: translateX(0);
+    }
+    dl {
+      margin-bottom: 20px;
+      dt {
+        display: block;
+        margin-bottom: 6px;
+        font-size: 12px;
+        line-height: 1;
+        text-transform: uppercase;
+        @include main-font3();
+      }
+      dd {
+        font-size: 14px;
+        letter-spacing: -0.6px;
+        @include main-font1();
+
+        a,
+        address {
+          color: $contact-map-main-color;
+          font-style: normal;
+          cursor: default;
+        }
+
+        a[href^=mailto] {
+          border-bottom: 1px solid transparent;
+          cursor: pointer;
+          @include transition(border-color, .3, 0);
+
+          &:hover {
+            border-bottom: 1px solid $contact-map-main-color;
+          }
+        }
+      }
+    }
+  }
+  &__map-title {
+    width: 90px;
+    margin-bottom: 25px;
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $tablet-portrait) {
+
+  .contact {
+
+    &__wrap {
+
+    }
+    &__form {
+      //width: 50%;
+      box-shadow: none;
+    }
+    &__map-canvas {
+      width: calc(100% - 306px);
+    }
+    &__map-info {
+      max-width: 306px;
+      padding-left: 5%;
+    }
+    &__map-image {
+      overflow: hidden;
+    }
+    &__map-tooltip {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(50px);
+      -webkit-transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+      transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+
+      &.active {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+@media (min-width: $desktop) {
+
+  .contact {
+
+    &__form {
+      //max-width: 570px;
+      padding: 50px 0 63px;
+
+      fieldset {
+        margin-bottom: 10px;
+      }
+    }
+    &__form-title {
+      margin-bottom: 40px;
+      font-size: 30px;
+    }
+    &__form-subtitle {
+      margin-bottom: 23px;
+      font-size: 14px;
+    }
+    &__form-item {
+      margin-bottom: 10px;
+    }
+    &__map {
+      height: 470px;
+    }
+    &__map-canvas {
+      width: calc(100% - 492px);
+    }
+    &__map-info {
+      max-width: 492px;
+      padding-left: 99px;
+      padding-top: 32px;
+      //transform: translateX(90%);
+
+      dl {
+        margin-bottom: 35px;
+        dt {
+          margin-bottom: 9px;
+          font-size: 14px;
+        }
+        dd {
+          font-size: 20px;
+        }
+      }
+    }
+    &__map-title {
+      width: 140px;
+      margin-bottom: 53px;
+      //font-size: 30px;
+      //line-height: 32px;
+    }
+  }
+
+}
+@media (min-width: $desktop-wide) {
+
+
+}
