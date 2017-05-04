@@ -425,7 +425,7 @@
       &_about {
 
         .site__hero-title {
-          @include main-font13;
+          @include main-font1;
           font-size: 22px;
           font-style: normal;
           line-height: 34px;
@@ -433,7 +433,7 @@
 
           span {
             margin-bottom: 20px;
-            @include main-font14;
+            @include main-font2;
             font-size: 40px;
           }
         }
