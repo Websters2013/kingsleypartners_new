@@ -1,5 +1,7 @@
 .values {
   padding: 40px 0 20px;
+  @include main-font1;
+  background-color: #eee;
 
   &__title {
     margin-bottom: 40px;
@@ -25,9 +27,11 @@
       }
     }
   }
+
   &__list {
     text-align: center;
   }
+
   &__list-item {
     display: block;
     max-width: 320px;
@@ -61,6 +65,7 @@
       }
     }
   }
+
   &__list-pic {
     position: relative;
     display: block;
@@ -117,44 +122,7 @@
       }
     }
   }
-}
 
-.values_about {
-  background: $main-blue-color;
-  @include main-font12;
-
-  .values__title {
-    color: $values-color2;
-  }
-  .values__list-item {
-
-    span {
-      color: $values-color2;
-    }
-
-    &:hover {
-
-      .values__list-pic {
-        transform: translateY(-10px);
-
-        path {
-          fill: $values-icon-color;
-        }
-      }
-    }
-  }
-  .values__list-pic {
-    background: $values-back2;
-    border: 3px solid $values-back2;
-    @include transition(all, .3, 0);
-
-    svg {
-
-      path {
-        fill: $main-blue-color;
-      }
-    }
-  }
 }
 
 @media (min-width: $tablet-portrait) {
@@ -216,10 +184,9 @@
   .values {
     @include flexbox();
     @include flex-direction();
-    @include align-items(center);
+    @include align-items( flex-start );
     @include justify-content(center);
-    min-height: 100vh;
-    padding: 70px 0 20px;
+    padding: 98px 0 20px;
 
     .site__centered {
       margin: 0;
@@ -227,11 +194,12 @@
 
     &__title {
       margin-bottom: 60px;
-      font-size: 47px;
+      font-size: 44px;
 
       span {
         font-size: 22px;
         line-height: 32px;
+        font-style: normal;
       }
     }
     &__list-item {

@@ -423,21 +423,22 @@
       }
 
       &_about {
-
         .site__hero-title {
           @include main-font1;
-          font-size: 22px;
+          font-size: 24px;
           font-style: normal;
-          line-height: 34px;
+          line-height: 30px;
           letter-spacing: 0;
 
           span {
-            margin-bottom: 20px;
-            @include main-font2;
-            font-size: 40px;
+            margin-bottom: 16px;
+            @include main-font3;
+            font-size: 44px;
+            line-height: 1;
           }
         }
       }
+
       &_search,
       &_team,
       &_about,
@@ -476,7 +477,7 @@
 
       &_about {
         background-position: center 84%;
-        padding: 79px 0 76px;
+        padding: 76px 0;
       }
       //&_search,
       //&_team {

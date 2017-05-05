@@ -8,7 +8,7 @@
       font-size: 16px;
       line-height: 23px;
       color: $main-text-color;
-      letter-spacing: -0.1px;
+      letter-spacing: -0.3px;
     }
   }
 }
@@ -30,7 +30,7 @@
       vertical-align: top;
       display: inline-block;
       width: 46.8%;
-      text-align: left;
+      text-align: justify;
     }
   }
 }
@@ -38,14 +38,14 @@
 @media (min-width: $tablet-landscape) {
 
   .description {
-    padding: 93px 0 49px;
+    padding: 93px 0 42px;
 
     &__wrap {
 
       p {
-        margin-bottom: 25px;
-        font-size: 22px;
-        line-height: 32px;
+        margin-bottom: 35px;
+        font-size: 20px;
+        line-height: 31px;
       }
     }
   }
