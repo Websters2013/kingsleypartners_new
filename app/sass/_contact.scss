@@ -7,14 +7,14 @@
     margin-bottom: 30px;
   }
   &__form {
-    padding: 30px 15px;
+    padding: 30px 0;
     margin: 0;
-    box-shadow: 0 1px 10px 0 rgba(0, 1, 1, 0.1);
     background: transparent;
+    box-shadow: none;
     max-width: 100%;
 
     .nice-radio_2 {
-      margin-right: 34px;
+      margin-right: 49px;
       margin-bottom: 18px;
     }
     button {
@@ -25,7 +25,7 @@
     margin-bottom: 30px;
     font-size: 25px;
     line-height: 1;
-    letter-spacing: -0.8px;
+    letter-spacing: -0.6px;
     color: $main-blue-color;
     @include main-font3();
   }
@@ -35,7 +35,7 @@
     line-height: 1;
     text-transform: uppercase;
     color: $main-blue-color;
-    @include main-font3();
+    @include main-font5();
   }
   &__form-item {
     margin-bottom: 10px;
@@ -47,59 +47,49 @@
 
     p,
     a {
-      margin-bottom: 11px;
+      margin-bottom: 10px;
       font-size: 14px;
       line-height: 20px;
       color: $main-text-color;
-      @include main-font7();
+      @include main-font1();
     }
     a {
-      @include main-font12();
 
       &:hover {
         text-decoration: underline;
       }
     }
   }
-
   &__form-row {
-    display: flex;
-    justify-content: space-between;
+    margin-bottom: 19px;
   }
-  &__form-col {
-    width: 45%;
-  }
-
   &__map {
     position: relative;
-    height: 360px;
+    //height: 360px;
   }
   &__map-canvas {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
+    position: relative;
+    //top: 0;
+    //right: 0;
+    //bottom: 0;
     width: 100%;
+    height: 360px;
   }
   &__map-info {
-    position: absolute;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    width: 88%;
-    max-width: 492px;
-    padding-left: 16%;
+    position: relative;
+    //display: flex;
+    //flex-flow: column;
+    //justify-content: center;
+    //left: 0;
+    //top: 0;
+    //bottom: 0;
+    padding: 30px 20px;
+    //width: 88%;
+    //max-width: 492px;
+    //padding-left: 16%;
     background-color: $main-orange-color;
     color: $contact-map-main-color;
-    //transform: translateX(90%);
-    //transition: transform .3s ease-in-out, background .3s ease-in-out;
 
-    &.open {
-      //transform: translateX(0);
-    }
     dl {
       margin-bottom: 20px;
       dt {
@@ -112,7 +102,7 @@
       }
       dd {
         font-size: 14px;
-        letter-spacing: -0.6px;
+        letter-spacing: 0;
         @include main-font1();
 
         a,
@@ -141,6 +131,30 @@
       width: 100%;
     }
   }
+  &__map-switcher {
+    margin-bottom: 51px;
+    font-size: 30px;
+    line-height: 32px;
+    letter-spacing: -0.2px;
+    color: $main-white-color;
+    @include main-font3();
+  }
+  &__map-switcher-item {
+    opacity: .5;
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 29px;
+    cursor: pointer;
+    @include transition( opacity, .3, .05 );
+
+    &.active {
+      cursor: default;
+    }
+    &.active,
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
 
 @media (min-width: $tablet-portrait) {
@@ -154,10 +168,26 @@
       //width: 50%;
       box-shadow: none;
     }
+    &__map {
+      height: 400px;
+    }
     &__map-canvas {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
       width: calc(100% - 306px);
     }
     &__map-info {
+      position: absolute;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 50%;
       max-width: 306px;
       padding-left: 5%;
     }
@@ -184,35 +214,46 @@
   .contact {
 
     &__form {
-      //max-width: 570px;
-      padding: 50px 0 63px;
+      padding: 48px 0 34px;
 
       fieldset {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
       }
     }
     &__form-title {
-      margin-bottom: 40px;
-      font-size: 30px;
+      margin-bottom: 53px;
+      margin-left: -2px;
+      font-size: 29px;
     }
     &__form-subtitle {
       margin-bottom: 23px;
       font-size: 14px;
     }
     &__form-item {
-      margin-bottom: 10px;
+      margin-bottom: 23px;
+    }
+    &__form-row {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__form-col {
+      width: 48.7%;
+
+      &:nth-child(1) {
+        width: 48.8%;
+      }
     }
     &__map {
-      height: 470px;
+      height: 558px;
     }
     &__map-canvas {
-      width: calc(100% - 492px);
+      width: calc(100% - 637px);
     }
     &__map-info {
-      max-width: 492px;
-      padding-left: 99px;
-      padding-top: 32px;
-      //transform: translateX(90%);
+      max-width: 637px;
+      padding-left: 110px;
+      padding-top: 0;
+      padding-bottom: 1px;
 
       dl {
         margin-bottom: 35px;
@@ -232,7 +273,6 @@
       //line-height: 32px;
     }
   }
-
 }
 @media (min-width: $desktop-wide) {
 

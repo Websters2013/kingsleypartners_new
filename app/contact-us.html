@@ -278,13 +278,13 @@
                             <div class="contact__form-text">
 
                                 <p>
-                                    Les informations qui vous concernent sont destinés à la société <a href="#">DGE Construction</a>.
+                                    Les informations qui vous concernent sont destinés à la société <a href="#">Kingsley & Partners</a>.
                                 </p>
 
                                 <p>
-                                    <a href="#">DGE Construction</a> s'engage à ne pas communiquer ces informations à des tiers
-                                    Vous disposez d'un droit d'accès, de modification, de rectification et de
-                                    suppression des données qui vous concernent (Art 34 de la loi " informatique et
+                                    <a href="#">Kingsley & Partners</a> s'engage à ne pas communiquer ces informations
+                                    à des tiers Vous disposez d'un droit d'accès, de modification, de rectification et
+                                    de suppression des données qui vous concernent (Art 34 de la loi " informatique et
                                     libertés").
                                 </p>
 
@@ -309,7 +309,7 @@
                         <span>Do you want to <strong>join us?</strong></span>
 
                         <p>
-                            Give us a call or send a mail to <a href="mailto:contact@dgeconstruction.be">contact@dgeconstruction.be</a>
+                            Give us a call or send a mail to <a href="mailto:contact@kingsleyandpartners.com">contact@kingsleyandpartners.com</a>
                         </p>
 
                     </div>
@@ -324,38 +324,59 @@
                     <!--contact__map-info-->
                     <div class="contact__map-info">
 
-                        <!--contact__map-title-->
-                        <h3 class="contact__map-title">
-                            <!--<img src="img/logo-white.png" alt="dge-construction"/>-->
-                        </h3>
-                        <!--/contact__map-title-->
+                        <!--contact__map-switcher-->
+                        <div class="contact__map-switcher">
+
+                            <!--contact__map-switcher-item-->
+                            <h3 class="contact__map-switcher-item active" data-country="Luxembourg">Luxembourg</h3>
+                            <!--/contact__map-switcher-item-->
+
+                            <!--contact__map-switcher-item-->
+                            <h3 class="contact__map-switcher-item" data-country="Belgium">Belgium</h3>
+                            <!--/contact__map-switcher-item-->
+
+                        </div>
+                        <!--/contact__map-switcher-->
 
                         <dl>
                             <dt>ADRESSE</dt>
-                            <dd><address>Avenue Louise, 279 B-1050 Luxembourg</address></dd>
+                            <dd><address class="contact__map-address">Avenue Louise, 279 B-1050 Luxembourg</address></dd>
                         </dl>
 
                         <dl>
                             <dt>EMAIL</dt>
-                            <dd><a href="mailto:contact@kingsleyandpartners.com">contact@kingsleyandpartners.com</a></dd>
+                            <dd><a class="contact__map-email" href="mailto:contact@kingsleyandpartners.com">contact@kingsleyandpartners.com</a></dd>
                         </dl>
 
                         <dl>
                             <dt>Tél</dt>
-                            <dd><a href="tel:024464632">02 446 46 32</a></dd>
+                            <dd><a class="contact__map-tel" href="tel:024464632">02 446 46 32</a></dd>
                         </dl>
 
                     </div>
                     <!--/contact__map-info-->
 
                     <!--contact__map-canvas-->
-                    <div class="contact__map-canvas" data-map='{"zoom":16,
-                                                                "marks":[{
-                                                                        "ID":"200",
-                                                                        "poi_latitude":"50.823515",
-                                                                        "poi_longitude":"4.367260"
-                                                                        }]
-                    }'></div>
+                    <div class="contact__map-canvas" data-map='{
+                    "zoom":16,
+                    "marks":[
+                            {
+                                 "country": "Luxembourg",
+                                 "poi_latitude":"49.678152",
+                                 "poi_longitude":"5.477052",
+                                 "address": "Avenue Louise, 279 B-1050 Luxembourg",
+                                 "email": "contact@kingsleyandpartners.com",
+                                 "tel": "02 446 46 32"
+                            },
+                            {
+                                 "country": "Belgium",
+                                 "poi_latitude":"50.900040",
+                                 "poi_longitude":"4.400384",
+                                 "address": "Rue ransbeek, 230 1120 Neder-Over-Heembeek",
+                                 "email": "hi@ergonomic.be",
+                                 "tel": "02 318 14 63"
+                            }
+                            ]}'></div>
                     <!--/contact__map-canvas-->
 
                 </div>

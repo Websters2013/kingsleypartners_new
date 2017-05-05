@@ -11,12 +11,12 @@
   font-size: 16px;
   line-height: 50px;
   letter-spacing: 0.6px;
-  @include main-font5();
+  @include main-font1();
   border: 2px solid $websters-select-border;
   background: $websters-select-back;
 
   &_opened {
-    border: 2px solid $websters-select-opened;
+    border: 2px solid $main-orange-color;
     
     .websters-select__item {
       color: $websters-select-opened;
