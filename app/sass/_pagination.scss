@@ -9,13 +9,13 @@
     width: 30px;
     height: 30px;
     margin: 0 3px;
-    padding: 4px 0 0;
+    padding: 6px 0 0;
     border: 2px solid transparent;
     border-radius: 50%;
     font-size: 18px;
     color: $main-text-color;
     text-align: center;
-    @include main-font4();
+    @include main-font1();
     font-weight: 900;
     -webkit-transition: border-color .3s, color .3s;
     transition: border-color .3s, color .3s;

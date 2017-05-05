@@ -15,7 +15,7 @@
     display: inline-block;
     font-size: 16px;
     color: $main-blue-color;
-    @include main-font2();
+    @include main-font1();
     cursor: pointer;
     -webkit-transition: opacity .3s, color .3s;
     transition: opacity .3s, color .3s;
@@ -55,12 +55,12 @@
     justify-content: center;
     align-items: center;
     height: 44px;
-    padding: 2px 19px 0;
+    padding: 6px 23px 0;
     border: 2px solid #ddd;
     border-radius: 40px;
     color: $main-blue-color;
     cursor: pointer;
-    font-size: 15px;
+    font-size: 18px;
     @include main-font1();
     @include transition(all, .3, 0);
 

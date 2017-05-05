@@ -98,7 +98,7 @@
       cursor: pointer;
       color: $websters-select-item-color;
       background: $websters-select-back;
-      @include main-font5();
+      @include main-font1();
       -webkit-transition: background .3s, color .3s;
       transition: background .3s, color .3s;
 

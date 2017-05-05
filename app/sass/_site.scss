@@ -265,6 +265,7 @@
         margin: 0 auto;
         font-size: 23px;
         line-height: 27px;
+        @include main-font1();
         color: $main-text-color;
 
         span {
@@ -439,14 +440,14 @@
           }
         }
       }
-
       &_search,
       &_team,
-      &_about,
+      &_about {
+        min-height: 222px;
+      }
       &_contact {
         min-height: 556px;
       }
-
     }
   }
 }

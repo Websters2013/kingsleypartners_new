@@ -165,9 +165,9 @@
     padding: 0 22px;
     background: $main-orange-color;
     height: 48px;
-    line-height: 45px;
+    line-height: 46px;
     color: $btn-search-color;
-    font-size: 16px;
+    font-size: 17px;
 
     i {
       position: relative;
@@ -186,7 +186,7 @@
     }
   }
   &_search-4 {
-    padding: 0 40px;
+    padding: 1px 40px 0;
     background: transparent;
     height: 48px;
     line-height: 45px;
