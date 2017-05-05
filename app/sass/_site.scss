@@ -217,8 +217,7 @@
       font-size: 25px;
       line-height: 35px;
       letter-spacing: 0.8px;
-      @include main-font1();
-      font-style: italic;
+      @include main-font5();
 
       span {
         display: block;
@@ -235,6 +234,7 @@
         margin: 0 auto;
         font-size: 20px;
         line-height: 27px;
+        font-style: normal;
 
         span {
           font-size: 36px;
@@ -440,6 +440,7 @@
           }
         }
       }
+
       &_search,
       &_team,
       &_about {
@@ -448,6 +449,7 @@
       &_contact {
         min-height: 556px;
       }
+
     }
   }
 }
@@ -547,5 +549,6 @@
     }
 
   }
+
 }
 
