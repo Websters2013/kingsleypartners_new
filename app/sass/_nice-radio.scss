@@ -72,11 +72,11 @@
   }
   label {
     position: relative;
-    padding: 0 0 0 40px;
+    padding: 2px 0 0 39px;
     color: $nice-radio-color_2;
     cursor: pointer;
     font-size: 18px;
-    @include  main-font5();
+    @include  main-font1();
     -webkit-transition: color .3s, background .3s, box-shadow .3s;
     transition: color .3s, background .3s, box-shadow .3s;
 
@@ -94,7 +94,7 @@
     &:after {
       position: absolute;
       top: -4px;
-      left: 2px;
+      left: 0;
       width: 24px;
       height: 24px;
       background-color: $nice-radio-back;

@@ -160,7 +160,7 @@
       color: $footer-text-color;
       font-size: 16px;
       line-height: 26px;
-      @include main-font7();
+      @include main-font1();
     }
     &-crafted {
       letter-spacing: -0.1px;
@@ -169,7 +169,7 @@
         display: inline-block;
         position: relative;
         color: $main-blue-color;
-        @include main-font8();
+        @include main-font1();
 
         &:after {
           opacity: 0;
