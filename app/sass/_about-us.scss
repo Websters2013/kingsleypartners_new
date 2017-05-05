@@ -64,7 +64,7 @@
         font-size: 18px;
         line-height: 22px;
         color: $main-blue-color;
-        letter-spacing: -0.3px;
+        letter-spacing: -0.1px;
         @include main-font1()
       }
     }
@@ -75,7 +75,7 @@
       font-size: 20px;
       line-height: 25px;
       color: $main-blue-color;
-      letter-spacing: -0.3px;
+      letter-spacing: -0.1px;
       @include main-font5();
     }
     .btn {
@@ -322,7 +322,7 @@
 
         > span {
           max-height: 62px;
-          margin-bottom: 24px;
+          margin-bottom: 19px;
           font-size: 24px;
           line-height: 32px;
         }
@@ -414,11 +414,11 @@
     padding: 0 30px 29px;
 
     &__wrap {
-      padding: 155px 0 127px;
+      padding: 158px 0 127px;
       max-width: 420px;
     }
     &__title {
-      margin-bottom: 26px;
+      margin-bottom: 22px;
       font-size: 36px;
     }
     &__text {
@@ -434,7 +434,7 @@
     &__slider {
       min-height: 500px;
       height: 100%;
-      padding: 31px 50px 0 86px;
+      padding: 35px 50px 0 86px;
 
       &-wrap {
         right: -2px;
@@ -447,13 +447,14 @@
 
       &-title {
         max-height: 65px;
-        margin-bottom: 2px;
+        margin-bottom: 1px;
         font-size: 30px;
         line-height: 32px;
       }
       .btn {
-        padding: 0 38px;
+        padding: 0 42px;
         font-size: 18px;
+        letter-spacing: 0.1px;
         line-height: 49px;
         height: 50px;
       }
@@ -494,7 +495,7 @@
     }
     &__offers {
       width: 49.2%;
-      padding: 154px 0;
+      padding: 158px 0;
 
       .about-us__title {
         padding: 0 0 0 118px;
@@ -537,7 +538,7 @@
     &__offers {
 
       .about-us__text {
-        margin-bottom: 30px;
+        margin-bottom: 32px;
       }
       .swiper-button-next,
       .swiper-button-prev {

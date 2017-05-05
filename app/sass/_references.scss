@@ -8,6 +8,16 @@
     color: $main-blue-color;
     text-align: center;
     @include main-font3();
+
+    span {
+      display: block;
+      margin-top: 5px;
+      font-size: 20px;
+      line-height: 28px;
+      color: $main-text-color;
+      @include main-font1();
+      letter-spacing: 0.3px;
+    }
   }
   &__gallery {
     position: relative;
@@ -119,8 +129,13 @@
     padding: 66px 0 57px;
 
     &__title {
-      margin-bottom: 40px;
+      margin-bottom: 9px;
       font-size: 36px;
+
+      span {
+        font-size: 23px;
+        line-height: 32px;
+      }
     }
   }
 }

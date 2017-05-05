@@ -2,12 +2,28 @@
 .news {
   padding: 40px 0;
 
+  .site__centered {
+    padding: 0;
+  }
+  .swiper-container {
+    padding: 15px 15px 30px;
+  }
   &__title {
     margin-bottom: 20px;
     font-size: 30px;
     color: $main-blue-color;
     text-align: center;
     @include main-font5();
+
+    span {
+      display: block;
+      margin-top: 5px;
+      font-size: 20px;
+      line-height: 28px;
+      color: $main-text-color;
+      @include main-font1();
+      letter-spacing: 0.3px;
+    }
   }
   &__list {
     position: relative;
@@ -50,12 +66,23 @@
     }
   }
   &__item {
+    position: relative;
     width: 30%;
     margin: 0;
-    padding: 20px 15px 87px;
-    border: 2px solid #eee;
-    box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0);
+    padding: 60% 15px 87px;
+    box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.08);
     @include transition( all, .2, 0 );
+
+    &:before {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      border: 2px solid transparent;
+      @include transition(all, .2, 0);
+      content: '';
+    }
 
     &:first-child {
       margin-left: 0;
@@ -64,9 +91,15 @@
       margin-right: 0;
     }
     &:hover {
-      border-color: $main-orange-color;
       box-shadow: 0 16px 30px 0 rgba(0, 0, 0, 0.08);
 
+      &:before {
+        top: -15px;
+        bottom: -15px;
+        right: -15px;
+        left: -15px;
+        border: 2px solid $main-orange-color;
+      }
       .news__item-link {
         left: 50%;
         -webkit-transform: translateX(-50%);
@@ -83,9 +116,18 @@
       }
     }
   }
+  &__item-pic {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40.2%;
+    background-size: cover;
+    background-position: center;
+  }
   &__item-title {
     overflow: hidden;
-    height: 80px;
+    height: 55px;
     margin-bottom: 20px;
     font-size: 25px;
     line-height: 27px;
@@ -94,7 +136,7 @@
   }
   &__item-text {
     overflow: hidden;
-    height: 208px;
+    height: 65px;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.1px;
@@ -104,7 +146,7 @@
   &__item-link {
     position: absolute;
     display: inline-block;
-    bottom: 50px;
+    bottom: 39px;
     left: 15px;
     font-size: 13px;
     line-height: 30px;
@@ -135,11 +177,13 @@
 
   .news {
 
-    &__item-text {
-      height: 250px;
+    &__item {
+      padding: 26% 15px 87px;
+    }
+    &__item-pic {
+      height: 40.2%;
     }
   }
-
 }
 @media (min-width: $tablet-landscape) {
 
@@ -148,38 +192,46 @@
 @media (min-width: $desktop) {
 
   .news {
-    padding: 117px 0 50px;
+    padding: 120px 0 24px;
 
     &__title {
-      margin-bottom: 63px;
+      margin-bottom: 53px;
       font-size: 36px;
+
+      span {
+        font-size: 23px;
+        line-height: 32px;
+      }
     }
     &__list {
       padding: 0;
 
       .swiper-button-prev {
-        left: -77px;
+        left: -61px;
       }
       .swiper-button-next {
-        right: -77px;
+        right: -61px;
       }
     }
     &__item {
-      padding: 51px 39px 87px;
+      padding: 23.3% 50px 102px 39px;
     }
     &__item-title {
       height: 80px;
-      margin-bottom: 24px;
+      margin-bottom: 21px;
       font-size: 30px;
       line-height: 40px;
     }
     &__item-text {
-      height: 208px;
+      height: 80px;
       font-size: 18px;
       line-height: 26px;
     }
     &__item-link {
       left: 40px;
+    }
+    &__item-pic {
+      height: 43.2%;
     }
   }
 }

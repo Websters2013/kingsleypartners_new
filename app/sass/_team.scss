@@ -97,7 +97,8 @@
     font-size: 22px;
     text-align: center;
     letter-spacing: -0.1px;
-    @include  main-font6();
+    @include  main-font1();
+    font-style: italic;
     white-space: nowrap;
     text-overflow: ellipsis;
 
@@ -134,10 +135,10 @@
 @media (min-width: $desktop) {
 
   .team {
-    padding: 116px 0 99px;
+    padding: 119px 0 99px;
 
     &__title {
-      margin-bottom: 74px;
+      margin-bottom: 71px;
       font-size: 36px;
 
       span {
@@ -183,7 +184,7 @@
       letter-spacing: -1.1px;
     }
     &__selection-about {
-      padding: 27px 10px 24px;
+      padding: 29px 10px 22px;
       font-size: 30px;
     }
   }
