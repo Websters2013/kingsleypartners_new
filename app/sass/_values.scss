@@ -13,13 +13,11 @@
 
     span {
       display: block;
-      margin-top: 13px;
+      margin-top: 8px;
       font-size: 18px;
       line-height: 26px;
-      letter-spacing: 0.3px;
-      color: $main-text-color;
-      @include main-font9();
-      font-style: italic;
+      @include main-font1();
+      letter-spacing: 0;
 
       strong {
         @include main-font8();
@@ -45,19 +43,20 @@
       font-size: 25px;
       line-height: 28px;
       letter-spacing: -0.8px;
-      @include  main-font2();
+      color: #3c4f71;
+      @include  main-font1();
     }
     p {
-      font-size: 16px;
-      line-height: 24px;
-      color: $main-text-color;
-      @include  main-font7();
+      font-size: 18px;
+      line-height: 28px;
+      color: #838fa3;
+      @include  main-font1();
     }
 
     &:hover {
 
       .values__list-pic {
-        background: transparent;
+        //background: transparent;
 
         path {
           fill: $main-blue-color;
@@ -73,8 +72,8 @@
     height: 130px;
     margin: 0 auto 20px;
     border-radius: 50%;
-    background: $main-blue-color;
-    border: 3px solid $main-blue-color;
+    background: #fff;
+    border: 3px solid #fff;
     @include transition(all, .3, 0);
 
     svg {
@@ -82,7 +81,7 @@
 
 
       path {
-        fill: $values-icon-color;
+        fill: #3c4f71;
         @include transition(fill, .3, 0);
       }
     }
@@ -186,14 +185,14 @@
     @include flex-direction();
     @include align-items( flex-start );
     @include justify-content(center);
-    padding: 98px 0 20px;
+    padding: 98px 0 43px;
 
     .site__centered {
       margin: 0;
     }
 
     &__title {
-      margin-bottom: 60px;
+      margin-bottom: 90px;
       font-size: 44px;
 
       span {
@@ -202,11 +201,14 @@
         font-style: normal;
       }
     }
+    &__list{
+      margin: 0 -16px;
+    }
     &__list-item {
       width: 33%;
       max-width: none;
       margin-bottom: 51px;
-      padding: 0 3.5%;
+      padding: 0 5.5%;
 
       span {
         margin-bottom: 9px;
@@ -215,41 +217,32 @@
       }
       p {
         font-size: 18px;
-        line-height: 28px;
+        line-height: 26px;
       }
     }
     &__list-pic {
-      width: 150px;
-      height: 150px;
-      margin: 0 auto 28px;
+      width: 180px;
+      height: 180px;
+      margin: 0 auto 33px;
 
       &_certificate {
         svg {
-          width: 99px;
-          height: 85px;
-
-          width: 80px;
-          height: 80px;
+          width: 116px;
+          height: 95px;
         }
       }
       &_atomium {
 
         svg {
           width: 100px;
-          height: 92px;
-
-          width: 80px;
-          height: 80px;
+          height: 100px;
         }
       }
       &_team {
 
         svg {
           width: 100px;
-          height: 92px;
-
-          width: 80px;
-          height: 80px;
+          height: 100px;
         }
       }
       &_clock {

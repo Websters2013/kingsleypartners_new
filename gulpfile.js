@@ -46,7 +46,8 @@ var paths = {
                 'app/js/jquery.scroll-to.js',
                 'app/js/jquery.animation.js',
                 'app/js/jquery.popup.js',
-                'app/js/jquery.review.js'
+                'app/js/jquery.review.js',
+                'app/js/jquery.graph.js'
 
             ]
         },
