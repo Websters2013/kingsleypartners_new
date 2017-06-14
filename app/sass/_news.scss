@@ -106,7 +106,7 @@
         transform: translateX(-50%);
 
         svg {
-          @include absoluteCenter();
+          @include absoluteCenterY();
           height: 30px;
 
           path {
