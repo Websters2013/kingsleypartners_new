@@ -114,12 +114,17 @@
   .team {
 
     &__selection {
+      @include flexbox();
+      @include flex-direction();
+      @include justify-content(center);
+      @include align-items();
       text-align: center;
     }
     &__selection-item {
       vertical-align: top;
       display: inline-block;
-      max-width: 350px;
+      max-width: 262px;
+      margin: 0 0 20px;
       margin-right: 10px;
 
       &:last-child {
@@ -135,11 +140,11 @@
 @media (min-width: $desktop) {
 
   .team {
-    padding: 119px 0 99px;
+    padding: 90px 0 75px;
 
     &__title {
-      margin-bottom: 71px;
-      font-size: 36px;
+      margin-bottom: 54px;
+      font-size: 27px;
 
       span {
         font-size: 22px;
@@ -150,12 +155,12 @@
       text-align: left;
     }
     &__selection-item {
-      width: 570px;
+      width: 427px;
       max-width: none;
-      margin-right: 25px;
+      margin-right: 18px;
     }
     &__selection-head {
-      height: 320px;
+      height: 240px;
     }
     &__selection-text {
       overflow: hidden;
@@ -184,8 +189,8 @@
       letter-spacing: -1.1px;
     }
     &__selection-about {
-      padding: 29px 10px 22px;
-      font-size: 30px;
+      padding: 21px 7px 16px;
+      font-size: 22px;
     }
   }
 }

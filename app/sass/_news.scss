@@ -192,15 +192,15 @@
 @media (min-width: $desktop) {
 
   .news {
-    padding: 120px 0 24px;
+    padding: 90px 0 18px;
 
     &__title {
-      margin-bottom: 53px;
-      font-size: 36px;
+      margin-bottom: 40px;
+      font-size: 27px;
 
       span {
-        font-size: 23px;
-        line-height: 32px;
+        font-size: 17px;
+        line-height: 24px;
       }
     }
     &__list {
@@ -214,24 +214,25 @@
       }
     }
     &__item {
-      padding: 23.3% 50px 102px 39px;
+      padding: 17.5% 37px 76px 30px;
     }
     &__item-title {
-      height: 80px;
-      margin-bottom: 21px;
-      font-size: 30px;
-      line-height: 40px;
+      height: 60px;
+      margin-bottom: 15px;
+      font-size: 22px;
+      line-height: 30px;
     }
     &__item-text {
-      height: 80px;
-      font-size: 18px;
-      line-height: 26px;
+      height: 60px;
+      font-size: 13px;
+      line-height: 19px;
     }
     &__item-link {
-      left: 40px;
+      left: 32px;
+      font-size: 11px;
     }
     &__item-pic {
-      height: 43.2%;
+      height: 32.4%;
     }
   }
 }

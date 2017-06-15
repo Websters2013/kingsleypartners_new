@@ -5,8 +5,8 @@
 
     p {
       margin-bottom: 17px;
-      font-size: 16px;
-      line-height: 23px;
+      font-size: 14px;
+      line-height: 19px;
       color: $main-text-color;
       letter-spacing: -0.3px;
     }
@@ -38,14 +38,14 @@
 @media (min-width: $tablet-landscape) {
 
   .description {
-    padding: 93px 0 42px;
+    padding: 70px 0 31px;
 
     &__wrap {
 
       p {
-        margin-bottom: 35px;
-        font-size: 20px;
-        line-height: 31px;
+        margin-bottom: 26px;
+        //font-size: 20px;
+        //line-height: 31px;
       }
     }
   }

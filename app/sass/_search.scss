@@ -337,7 +337,7 @@
     position: absolute;
     top: 0;
     right: 0;
-    font-size: 22px;
+    font-size: 16px;
     color: $main-blue-color;
     @include main-font1();
 
@@ -421,11 +421,11 @@
 @media (min-width: $desktop) {
 
   .search {
-    padding: 71px 0 60px;
+    padding: 54px 0 45px;
 
     &__aside {
-      max-width: 525px;
-      padding: 60px 59px 60px;
+      max-width: 492px;
+      padding: 45px 45px 45px;
     }
     &__aside-form {
 
@@ -441,7 +441,7 @@
       margin-bottom: 26px;
     }
     &__aside-item {
-      margin-bottom: 53px;
+      margin-bottom: 40px;
     }
     &__aside-map {
 
@@ -470,16 +470,16 @@
       }
     }
     &__result-item {
-      padding: 57px 59px 0;
+      padding: 43px 45px 0;
     }
     &__result-item-title {
-      font-size: 30px;
-      line-height: 32px;
+      font-size: 23px;
+      line-height: 25px;
     }
     &__result-item-subtitle {
       margin-bottom: 21px;
-      font-size: 24px;
-      line-height: 32px;
+      font-size: 18px;
+      line-height: 24px;
     }
     &__result-item-temp {
       position: absolute;
@@ -510,12 +510,12 @@
       }
     }
     &__result-item-text {
-      margin-bottom: 53px;
-      font-size: 18px;
-      line-height: 30px;
+      margin-bottom: 40px;
+      font-size: 14px;
+      line-height: 23px;
     }
     &__result-item-footer {
-      margin: 0 -60px 0;
+      margin: 0 -45px 0;
       display: flex;
       justify-content: space-between;
 
@@ -535,8 +535,8 @@
         }
         dd {
           overflow: visible;
-          font-size: 23px;
-          line-height: 30px;
+          font-size: 18px;
+          line-height: 23px;
           white-space: normal;
           text-overflow: inherit;
         }

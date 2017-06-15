@@ -190,9 +190,9 @@
       top: auto;
       bottom: 74px;
       margin: 0;
-      width: 80px;
-      height: 80px;
-      border-radius: 80px;
+      width: 60px;
+      height: 60px;
+      border-radius: 60px;
       background: #f9fbfd;
       border: 2px solid $main-orange-color;
       @include transition(all, .3, 0);
@@ -201,9 +201,9 @@
         position: absolute;
         top: 50%;
         left: 42%;
-        width: 14px;
-        height: 14px;
-        margin: -7px 0 0 -7px;
+        width: 10px;
+        height: 10px;
+        margin: -5px 0 0 -5px;
         background: none;
         border-top: 2px solid #8c8ea7;
         border-left: 2px solid #8c8ea7;
@@ -267,7 +267,7 @@
           width: 33.7%;
 
           dt {
-            font-size: 13px;
+            font-size: 10px;
           }
           dd {
             font-size: 18px;
@@ -323,8 +323,8 @@
         > span {
           max-height: 62px;
           margin-bottom: 19px;
-          font-size: 24px;
-          line-height: 32px;
+          font-size: 18px;
+          line-height: 24px;
         }
       }
       &-footer {
@@ -337,8 +337,8 @@
           width: 49%;
 
           dd {
-            font-size: 24px;
-            line-height: 30px;
+            font-size: 18px;
+            line-height: 22px;
           }
         }
       }
@@ -379,7 +379,7 @@
         left: auto;
         margin: 0;
         top: auto;
-        bottom: 57px;
+        bottom: 70px;
 
         &:after {
           left: 42%;
@@ -410,31 +410,31 @@
 @media (min-width: $desktop) {
 
   .about-us {
-    min-height: 710px;
-    padding: 0 30px 29px;
+    min-height: 532px;
+    padding: 0 22px 21px;
 
     &__wrap {
-      padding: 158px 0 127px;
+      padding: 118px 0 95px;
       max-width: 420px;
     }
     &__title {
       margin-bottom: 22px;
-      font-size: 36px;
+      font-size: 27px;
     }
     &__text {
-      margin-bottom: 29px;
-      font-size: 18px;
-      line-height: 30px;
+      margin-bottom: 21px;
+      font-size: 13px;
+      line-height: 22px;
     }
     &__mark {
-      margin-bottom: 52px;
-      font-size: 22px;
-      line-height: 30px;
+      margin-bottom: 39px;
+      font-size: 16px;
+      line-height: 22px;
     }
     &__slider {
-      min-height: 500px;
+      min-height: 375px;
       height: 100%;
-      padding: 35px 50px 0 86px;
+      padding: 26px 37px 0 64px;
 
       &-wrap {
         right: -2px;
@@ -442,21 +442,21 @@
       }
       &-item {
         height: 100%;
-        padding: 32px 32px 120px;
+        padding: 24px 24px 90px;
       }
 
       &-title {
         max-height: 65px;
         margin-bottom: 1px;
-        font-size: 30px;
-        line-height: 32px;
+        font-size: 22px;
+        line-height: 24px;
       }
       .btn {
-        padding: 0 42px;
-        font-size: 18px;
+        padding: 0 31px;
+        font-size: 13px;
         letter-spacing: 0.1px;
-        line-height: 49px;
-        height: 50px;
+        line-height: 35px;
+        height: 37px;
       }
       &-footer {
         left: 0;
@@ -495,10 +495,10 @@
     }
     &__offers {
       width: 49.2%;
-      padding: 158px 0;
+      padding: 118px 0;
 
       .about-us__title {
-        padding: 0 0 0 118px;
+        padding: 0 0 0 88px;
       }
       .about-us__text {
         max-height: 120px;
@@ -506,7 +506,7 @@
       }
 
       > .btn {
-        top: 154px;
+        top: 115px;
         right: 11.8%;
       }
     }

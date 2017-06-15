@@ -40,14 +40,15 @@
   .language{
     position: absolute;
     right: auto;
-    top: 69px;
+    top: 51px;
     left: 237px;
 
     li {
       margin: 0 17px 0 0;
+      font-size: 11px;
 
       &.active {
-        font-size: 18px;
+        font-size: 14px;
       }
     }
   }

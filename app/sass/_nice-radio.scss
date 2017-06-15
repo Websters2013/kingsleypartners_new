@@ -72,10 +72,10 @@
   }
   label {
     position: relative;
-    padding: 2px 0 0 39px;
+    padding: 1px 0 0 39px;
     color: $nice-radio-color_2;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 14px;
     @include  main-font1();
     -webkit-transition: color .3s, background .3s, box-shadow .3s;
     transition: color .3s, background .3s, box-shadow .3s;
@@ -95,8 +95,8 @@
       position: absolute;
       top: -4px;
       left: 0;
-      width: 24px;
-      height: 24px;
+      width: 18px;
+      height: 18px;
       background-color: $nice-radio-back;
       background-image: none;
       border: 1px solid $websters-select-item-color;
@@ -109,7 +109,7 @@
       opacity: 0;
       border: 1px solid $main-orange-color;
       background: transparent url("../img/radio-btn_bg.png") center no-repeat;
-      background-size: 12px 12px;
+      background-size: 10px 10px;
       -webkit-transition: opacity .3s;
       transition: opacity .3s;
     }
@@ -121,9 +121,9 @@
   .nice-radio {
 
     label {
-      height: 44px;
-      padding: 5px 20px 0;
-      font-size: 18px;
+      height: 33px;
+      padding: 1px 20px 0;
+      font-size: 13px;
     }
   }
 }

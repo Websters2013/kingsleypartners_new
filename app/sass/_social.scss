@@ -11,8 +11,8 @@
 
     a {
       display: table;
-      width: 25px;
-      height: 25px;
+      width: 22px;
+      height: 22px;
       padding: 4px 0 0;
       border-radius: 50%;
       text-align: center;
@@ -22,7 +22,7 @@
       i {
         vertical-align: middle;
         color: $social-color;
-        font-size: 16px;
+        font-size: 13px;
       }
       &:hover {
         -webkit-transform: translateY(-3px);
@@ -98,7 +98,7 @@
 @media (min-width: $tablet-landscape) {
 
   .social {
-    top: -55px;
+    top: -42px;
     right: 0;
   }
 }
