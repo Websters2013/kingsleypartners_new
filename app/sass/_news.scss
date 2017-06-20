@@ -10,7 +10,7 @@
   }
   &__title {
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 27px;
     color: $main-blue-color;
     text-align: center;
     @include main-font5();
@@ -137,8 +137,8 @@
   &__item-text {
     overflow: hidden;
     height: 65px;
-    font-size: 16px;
-    line-height: 20px;
+    font-size: 14px;
+    line-height: 24px;
     letter-spacing: -0.1px;
     color: $main-text-color;
     @include main-font7();
@@ -196,10 +196,10 @@
 
     &__title {
       margin-bottom: 40px;
-      font-size: 27px;
+      font-size: 33px;
 
       span {
-        font-size: 17px;
+        font-size: 18px;
         line-height: 24px;
       }
     }
@@ -218,14 +218,14 @@
     }
     &__item-title {
       height: 60px;
-      margin-bottom: 15px;
+      margin-bottom: 10px;
       font-size: 22px;
       line-height: 30px;
     }
     &__item-text {
       height: 60px;
-      font-size: 13px;
-      line-height: 19px;
+      font-size: 14px;
+      line-height: 24px;
     }
     &__item-link {
       left: 32px;

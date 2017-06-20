@@ -2,12 +2,12 @@
   position: relative;
 
   &__wrap {
-    padding: 40px 0;
+    padding: 40px 15px;
   }
   &__title {
     display: block;
     margin-bottom: 20px;
-    font-size: 30px;
+    font-size: 27px;
     line-height: 1;
     color: $main-blue-color;
     letter-spacing: -0.2px;
@@ -16,8 +16,8 @@
   &__text {
     overflow: hidden;
     margin-bottom: 25px;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 14px;
+    line-height: 24px;
     letter-spacing: -0.2px;
     color: $main-text-color;
     @include main-font7();
@@ -51,7 +51,8 @@
       position: absolute;
     }
     &-item {
-      padding: 15px 15px 67px;
+      overflow: hidden;
+      padding: 15px 15px 67px 0;
 
       &.active {
         visibility: visible !important;
@@ -82,7 +83,7 @@
       position: relative;
       left: 3px;
       font-size: 13px;
-      line-height: 32px;
+      line-height: 46px;
       padding: 0 30px;
       letter-spacing: 0;
       background: #f9fbfd;
@@ -240,7 +241,7 @@
       bottom: 25px;
       left: 15px;
       height: auto;
-      padding: 9px 24px 5px;
+      padding: 12px 30px 10px;
       background: #f9fbfd;
 
       &:hover {
@@ -302,11 +303,23 @@
 @media (min-width: $tablet-landscape) {
 
   .about-us {
+    @include flexbox();
+    @include flex-direction();
+    @include justify-content(center);
+    @include align-items();
     min-height: 585px;
 
     &__wrap {
-      padding: 60px 0;
-      max-width: 45%;
+      padding: 60px 30px;
+      width: 49.5%;
+      //max-width: 45%;
+
+      >div {
+        max-width: 630px;
+        margin: 0 0 0 auto;
+        padding: 0 calc(100px + 12%) 0 0;
+      }
+
     }
     &__slider {
       height: 100%;
@@ -364,12 +377,12 @@
       }
     }
     &__offers {
-      position: absolute;
+      //position: absolute;
       margin: 0;
-      top: 0;
-      right: 0;
+      //top: 0;
+      //right: 0;
       width: 50.5%;
-      height: 100%;
+      //height: 100%;
       padding: 60px 0;
       border-left: 1px solid #ebebeb;
 
@@ -410,21 +423,22 @@
 @media (min-width: $desktop) {
 
   .about-us {
-    min-height: 532px;
-    padding: 0 22px 21px;
+    min-height: 500px;
+    //padding: 0 22px 21px;
 
     &__wrap {
-      padding: 118px 0 95px;
-      max-width: 420px;
+      padding: 90px 30px 70px;
+      //max-width: 420px;
+      width: 51.8%;
     }
     &__title {
       margin-bottom: 22px;
-      font-size: 27px;
+      font-size: 33px;
     }
     &__text {
       margin-bottom: 21px;
-      font-size: 13px;
-      line-height: 22px;
+      font-size: 14px;
+      line-height: 24px;
     }
     &__mark {
       margin-bottom: 39px;
@@ -452,11 +466,11 @@
         line-height: 24px;
       }
       .btn {
-        padding: 0 31px;
-        font-size: 13px;
+        padding: 0 39px;
+        font-size: 16px;
         letter-spacing: 0.1px;
-        line-height: 35px;
-        height: 37px;
+        line-height: 46px;
+        height: 47px;
       }
       &-footer {
         left: 0;
@@ -495,18 +509,18 @@
     }
     &__offers {
       width: 49.2%;
-      padding: 118px 0;
+      padding: 90px 0 70px;
 
       .about-us__title {
         padding: 0 0 0 88px;
       }
       .about-us__text {
         max-height: 120px;
-        margin-bottom: 12px;
+        margin-bottom: 30px;
       }
 
       > .btn {
-        top: 115px;
+        top: 86px;
         right: 11.8%;
       }
     }
