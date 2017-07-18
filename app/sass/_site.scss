@@ -158,8 +158,8 @@
     &-crafted {
       display: block;
       color: $footer-text-color;
-      font-size: 16px;
-      line-height: 26px;
+      font-size: 12px;
+      line-height: 19px;
       @include main-font1();
     }
     &-crafted {
@@ -222,7 +222,7 @@
       span {
         display: block;
         margin-top: -1px;
-        font-size: 33px;
+        font-size: 40px;
         @include main-font3();
       }
     }
@@ -232,12 +232,12 @@
         position: relative;
         max-width: 770px;
         margin: 0 auto;
-        font-size: 20px;
-        line-height: 27px;
+        //font-size: 20px;
+        //line-height: 27px;
         font-style: normal;
 
         span {
-          font-size: 36px;
+          //font-size: 33px;
           margin-bottom: 18px;
         }
         strong {
@@ -263,13 +263,13 @@
       .site__hero-title {
         max-width: 670px;
         margin: 0 auto;
-        font-size: 23px;
-        line-height: 27px;
+        //font-size: 23px;
+        //line-height: 27px;
         @include main-font1();
         color: $main-text-color;
 
         span {
-          font-size: 36px;
+          //font-size: 33px;
           margin-bottom: 13px;
           color: $main-blue-color;
         }
@@ -284,12 +284,12 @@
       .site__hero-title {
         max-width: 670px;
         margin: 0 auto;
-        font-size: 23px;
-        line-height: 27px;
+        //font-size: 23px;
+        //line-height: 27px;
         color: $main-text-color;
 
         span {
-          font-size: 36px;
+          //font-size: 33px;
           margin-bottom: 13px;
           color: $main-blue-color;
         }
@@ -306,8 +306,8 @@
       .site__hero-title {
         max-width: 670px;
         margin: 0 auto;
-        font-size: 23px;
-        line-height: 27px;
+        //font-size: 23px;
+        //line-height: 27px;
         @include main-font1();
 
         span {
@@ -353,20 +353,19 @@
     }
   }
 }
-
 @media (min-width: $tablet-landscape) {
   .site {
 
     &__header {
-      height: 160px;
+      height: 150px;
 
       &-layout {
-        height: 160px;
+        height: 150px;
       }
     }
     &__menu {
       position: absolute;
-      top: 66px;
+      top: 65px;
       right: 16px;
       left: auto;
       height: auto;
@@ -390,7 +389,7 @@
         a {
           vertical-align: top;
           display: inline-block;
-          font-size: 15px;
+          font-size: 16px;
           letter-spacing: 0.2px;
           color: $main-blue-color;
           @include transition(color, .3, 0);
@@ -407,53 +406,54 @@
       .btn {
         vertical-align: top;
         display: inline-block;
-        margin-top: -16px;
+        margin-top: -15px;
       }
     }
     &__hero {
-      min-height: 680px;
+      min-height: 510px;
       padding: 30px 0;
 
       &-title {
-        margin-bottom: 45px;
-        font-size: 36px;
-        line-height: 47px;
+        margin-bottom: 33px;
+        font-size: 27px;
+        line-height: 35px;
 
         span {
-          font-size: 42px;
+          //font-size: 33px;
         }
       }
 
       &_about {
         .site__hero-title {
-          @include main-font1;
-          font-size: 24px;
-          font-style: normal;
-          line-height: 30px;
-          letter-spacing: 0;
+          //@include main-font1;
+          //font-size: 24px;
+          //font-style: normal;
+          //line-height: 30px;
+          //letter-spacing: 0;
 
           span {
             margin-bottom: 16px;
             @include main-font3;
-            font-size: 44px;
+            //font-size: 33px;
             line-height: 1;
           }
         }
       }
-
+      &_home {
+        max-height: 750px;
+      }
       &_search,
       &_team,
       &_about {
-        min-height: 554px;
+        min-height: 415px;
       }
       &_contact {
-        min-height: 556px;
+        min-height: 417px;
       }
 
     }
   }
 }
-
 @media (min-width: $desktop) {
 
   .site {
@@ -461,7 +461,7 @@
     &:after {
       display: block;
       width: 100%;
-      height: 300px;
+      height: 225px;
       clear: both;
       content: '';
     }
@@ -473,7 +473,7 @@
         margin-right: 42.1px;
       }
       .btn {
-        margin-left: -7px;
+        margin-left: -10px;
       }
     }
     &__hero {
@@ -491,15 +491,14 @@
       //  padding: 79px 0 76px;
       //}
     }
-
     &__footer {
       position: absolute;
       z-index: 2;
       right: 0;
       bottom: 0;
       left: 0;
-      height: 300px;
-      padding: 78px 0 0;
+      height: 225px;
+      padding: 58px 0 0;
       text-align: center;
 
       &-layout {
@@ -513,9 +512,9 @@
       }
       &-logo {
         top: 2px;
-        //width: 171px;
+        //width: 128px;
         width: 230px;
-        margin-bottom: 80px;
+        margin-bottom: 60px;
       }
       &-inner {
         margin: 0 -15px;
@@ -532,7 +531,6 @@
   }
 
 }
-
 @media (min-width: $desktop-wide) {
 
   .site {

@@ -4,11 +4,10 @@
 
   &__title {
     margin-bottom: 19px;
-    font-size: 30px;
+    font-size: 27px;
     color: $testimonials-title-color;
     text-align: center;
-    letter-spacing: -0.4px;
-    @include main-font1();
+    @include main-font3();
 
     span {
       display: block;
@@ -31,20 +30,20 @@
       top: -10px;
       left: -10px;
       border: 2px solid $testimonials-deco-border;
-      width: 116px;
-      height: 116px;
+      width: 87px;
+      height: 87px;
       content: '';
     }
     img {
       position: relative;
       z-index: 1;
-      width: 140px;
-      height: 140px;
-      border: 10px solid $main-blue-color;
+      width: 105px;
+      height: 105px;
+      border: 7px solid $main-blue-color;
     }
   }
   &__info-text {
-    height: 220px;
+    //height: 220px;
 
     p {
       margin-bottom: 20px;
@@ -81,7 +80,7 @@
     }
   }
   .swiper-container {
-    max-width: 870px;
+    max-width: 750px;
     margin: 0 auto;
 
     .swiper-pagination {
@@ -114,14 +113,14 @@
     &__info-pic {
       vertical-align: top;
       display: inline-block;
-      margin-right: 54px;
+      margin-right: 40px;
     }
     &__info-text {
       overflow: hidden;
       vertical-align: top;
       display: inline-block;
       padding-top: 10px;
-      height: 170px;
+      //height: 170px;
       width: 70%;
     }
     &__info-name {
@@ -139,32 +138,32 @@
 @media (min-width: $desktop) {
 
   .testimonials {
-    padding: 80px 0 74px;
+    padding: 60px 0 55px;
 
     &__title {
       margin-bottom: 6px;
-      font-size: 36px;
+      font-size: 33px;
 
       span {
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 18px;
+        line-height: 24px;
       }
     }
     &__info {
-      padding: 75px 53px 62px;
+      padding: 56px 40px 46px;
     }
     &__info-text {
-      height: 143px;
-      width: 565px;
+      //height: 108px;
+      width: 423px;
 
       p {
-        font-size: 24px;
-        line-height: 32px;
+        font-size: 18px;
+        line-height: 24px;
       }
     }
     &__info-name {
       margin-right: 25px;
-      font-size: 18px;
+      font-size: 13px;
     }
   }
 }

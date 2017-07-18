@@ -9,7 +9,7 @@
     > span {
       display: block;
       margin-bottom: 13px;
-      font-size: 25px;
+      font-size: 27px;
       letter-spacing: -0.1px;
       color: $join-us-color;
       @include main-font1();
@@ -49,16 +49,16 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 80px 15px 79px;
+      padding: 60px 11px 60px;
 
       > span {
         display: inline-block;
         margin: 7px 0 0;
-        font-size: 36px;
+        font-size: 33px;
       }
       > p {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 14px;
+        line-height: 20px;
       }
     }
 

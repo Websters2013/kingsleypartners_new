@@ -5,7 +5,7 @@
 
   &__title {
     margin-bottom: 40px;
-    font-size: 35px;
+    font-size: 27px;
     color: #3c4f71;
     text-align: center;
     letter-spacing: -0.6px;
@@ -14,7 +14,7 @@
     span {
       display: block;
       margin-top: 8px;
-      font-size: 18px;
+      font-size: 20px;
       line-height: 26px;
       @include main-font1();
       letter-spacing: 0;
@@ -47,8 +47,8 @@
       @include  main-font1();
     }
     p {
-      font-size: 18px;
-      line-height: 28px;
+      font-size: 14px;
+      line-height: 24px;
       color: #838fa3;
       @include  main-font1();
     }
@@ -185,19 +185,19 @@
     @include flex-direction();
     @include align-items( flex-start );
     @include justify-content(center);
-    padding: 98px 0 43px;
+    padding: 73px 0 32px;
 
     .site__centered {
       margin: 0;
     }
 
     &__title {
-      margin-bottom: 90px;
-      font-size: 44px;
+      margin-bottom: 68px;
+      font-size: 33px;
 
       span {
-        font-size: 22px;
-        line-height: 32px;
+        font-size: 17px;
+        line-height: 24px;
         font-style: normal;
       }
     }
@@ -212,57 +212,51 @@
 
       span {
         margin-bottom: 9px;
-        font-size: 30px;
-        line-height: 28px;
+        font-size: 23px;
+        line-height: 21px;
       }
       p {
-        font-size: 18px;
-        line-height: 26px;
+        font-size: 14px;
+        line-height: 24px;
       }
     }
     &__list-pic {
-      width: 180px;
-      height: 180px;
+      width: 135px;
+      height: 135px;
       margin: 0 auto 33px;
 
       &_certificate {
         svg {
-          width: 116px;
-          height: 95px;
+          width: 87px;
+          height: 71px;
         }
       }
       &_atomium {
 
         svg {
-          width: 100px;
-          height: 100px;
+          width: 75px;
+          height: 75px;
         }
       }
       &_team {
 
         svg {
-          width: 100px;
-          height: 100px;
+          width: 75px;
+          height: 75px;
         }
       }
       &_clock {
 
         svg {
-          width: 100px;
-          height: 100px;
-
-          width: 80px;
-          height: 80px;
+          width: 60px;
+          height: 60px;
         }
       }
       &_clean {
 
         svg {
-          width: 100px;
-          height: 99px;
-
-          width: 80px;
-          height: 80px;
+          width: 60px;
+          height: 60px;
         }
       }
     }

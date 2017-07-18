@@ -1,5 +1,5 @@
 .contact {
-  padding: 31px 0 0;
+  padding: 24px 0 0;
   background: $contact-back;
 
   &__wrap {
@@ -49,7 +49,7 @@
     a {
       margin-bottom: 10px;
       font-size: 14px;
-      line-height: 20px;
+      line-height: 24px;
       color: $main-text-color;
       @include main-font1();
     }
@@ -132,9 +132,9 @@
     }
   }
   &__map-switcher {
-    margin-bottom: 51px;
-    font-size: 30px;
-    line-height: 32px;
+    margin-bottom: 39px;
+    font-size: 26px;
+    line-height: 28px;
     letter-spacing: -0.2px;
     color: $main-white-color;
     @include main-font3();
@@ -214,20 +214,20 @@
   .contact {
 
     &__form {
-      padding: 48px 0 34px;
+      padding: 36px 0 26px;
 
       fieldset {
         margin-bottom: 20px;
       }
     }
     &__form-title {
-      margin-bottom: 53px;
+      margin-bottom: 40px;
       margin-left: -2px;
-      font-size: 29px;
+      font-size: 22px;
     }
     &__form-subtitle {
       margin-bottom: 23px;
-      font-size: 14px;
+      font-size: 12px;
     }
     &__form-item {
       margin-bottom: 23px;
@@ -244,7 +244,7 @@
       }
     }
     &__map {
-      height: 558px;
+      height: 400px;
     }
     &__map-canvas {
       width: calc(100% - 637px);
@@ -264,6 +264,11 @@
         dd {
           font-size: 20px;
         }
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+
       }
     }
     &__map-title {
