@@ -57,7 +57,8 @@ var paths = {
                 'app/js/jquery.main.js',
                 'app/js/jquery.websters-select.js',
                 'app/js/jquery.contact.js',
-                'app/js/jquery.popup.js'
+                'app/js/jquery.popup.js',
+                'app/js/jquery.validation.js',
             ]
         }
     ],

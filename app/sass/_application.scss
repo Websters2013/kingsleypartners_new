@@ -63,8 +63,8 @@
       color: $application-input-color;
       letter-spacing: 0;
       @include main-font1();
-      -webkit-transition: color .3s, border-color .3s;
-      transition: color .3s, border-color .3s;
+      -webkit-transition: color .3s, border-color .3s, opacity .3s ease, visibility .3s ease;
+      transition: color .3s, border-color .3s, opacity .3s ease, visibility .3s ease;
 
       &::-webkit-input-placeholder {
         color: $application-input-color;

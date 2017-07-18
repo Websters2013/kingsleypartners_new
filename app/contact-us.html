@@ -141,7 +141,7 @@
                                         <!--nice-radio-->
                                         <div class="nice-radio_2">
 
-                                            <input name="you-are" id="client" type="radio" checked>
+                                            <input name="you-are" id="client" type="radio" data-category="client" checked>
                                             <label for="client">Un Client</label>
 
                                         </div>
@@ -150,7 +150,7 @@
                                         <!--nice-radio-->
                                         <div class="nice-radio_2">
 
-                                            <input name="you-are" id="candidat" type="radio">
+                                            <input name="you-are" id="candidat" type="radio" data-category="candidate">
                                             <label for="candidat">Un Candidat</label>
 
                                         </div>
@@ -201,24 +201,24 @@
 
                                         <!--application__double-->
                                         <fieldset class="application__double">
-                                            <input type="text" placeholder="First name">
-                                            <input type="text" placeholder="Last name">
+                                            <input type="text" placeholder="First name*" data-required="true">
+                                            <input type="text" placeholder="Last name*" data-required="true">
                                         </fieldset>
                                         <!--/application__double-->
 
                                         <!--application__double-->
                                         <fieldset class="application__double">
-                                            <input type="tel" placeholder="Phone number">
+                                            <input type="tel" placeholder="Phone number*" data-required="true">
                                             <input type="email" placeholder="Email">
                                         </fieldset>
                                         <!--/application__double-->
 
                                         <fieldset>
-                                            <input type="text" placeholder="Address">
+                                            <input type="text" placeholder="Address" data-candidate="false">
                                         </fieldset>
 
                                         <fieldset>
-                                            <input type="text" placeholder="Company">
+                                            <input type="text" placeholder="Company*" data-candidate="true" data-required="true">
                                         </fieldset>
 
                                     </div>
@@ -241,7 +241,7 @@
                                         </fieldset>
 
                                         <fieldset>
-                                            <textarea name="message" placeholder="Message"></textarea>
+                                            <textarea name="message" placeholder="Message*" data-required="true"></textarea>
                                         </fieldset>
 
                                         <!--application__file-->

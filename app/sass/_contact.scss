@@ -39,6 +39,17 @@
   }
   &__form-item {
     margin-bottom: 10px;
+
+    input.not-valid,
+    textarea.not-valid{
+      border-color: #3c4f71;
+    }
+
+    input.hide{
+      opacity: 0;
+      visibility: hidden;
+    }
+
   }
   &__form-text {
     margin-top: -5px;
