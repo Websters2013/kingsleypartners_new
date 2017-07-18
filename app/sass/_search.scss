@@ -1,4 +1,3 @@
-
 .search {
   padding: 40px 0 20px;
   background: $search-back;
@@ -329,6 +328,14 @@
       }
     }
   }
+  &__result-item-pic {
+    position: relative;
+    padding-bottom: 40%;
+    margin: -20px -15px 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
 
 }
 .budget-slider {
@@ -568,6 +575,10 @@
           }
         }
       }
+    }
+    &__result-item-pic {
+      padding-bottom: 38%;
+      margin: -43px -45px 40px;
     }
   }
 }
