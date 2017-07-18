@@ -1,6 +1,16 @@
 .about-us {
   position: relative;
 
+  &:after{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    background: #f9fbfd;
+    content: '';
+  }
+
   &__wrap {
     padding: 40px 0;
   }
@@ -182,7 +192,8 @@
   &__offers {
     position: relative;
     padding: 40px 15px 65px;
-    background: #f9fbfd;
+    z-index: 1;
+    //background: #f9fbfd;
 
     .swiper-button-next,
     .swiper-button-prev {
@@ -304,6 +315,10 @@
   .about-us {
     min-height: 585px;
 
+    &:after{
+      border-left: 1px solid #ebebeb;
+    }
+
     &__wrap {
       padding: 60px 0;
       max-width: 45%;
@@ -367,11 +382,12 @@
       position: absolute;
       margin: 0;
       top: 0;
-      right: 0;
+      left: 50%;
       width: 50.5%;
+      max-width: 985px;
       height: 100%;
       padding: 60px 0;
-      border-left: 1px solid #ebebeb;
+      //border-left: 1px solid #ebebeb;
 
       .swiper-button-next,
       .swiper-button-prev {
@@ -410,11 +426,13 @@
 @media (min-width: $desktop) {
 
   .about-us {
-    min-height: 710px;
+    //min-height: 710px;
+    min-height: 592px;
     padding: 0 30px 29px;
 
     &__wrap {
-      padding: 158px 0 127px;
+      //padding: 158px 0 127px;
+      padding: 78px 0;
       max-width: 420px;
     }
     &__title {
@@ -495,7 +513,8 @@
     }
     &__offers {
       width: 49.2%;
-      padding: 158px 0;
+      //padding: 158px 0;
+      padding: 53px 0;
 
       .about-us__title {
         padding: 0 0 0 118px;
@@ -506,7 +525,8 @@
       }
 
       > .btn {
-        top: 154px;
+        //top: 154px;
+        top: 51px;
         right: 11.8%;
       }
     }
