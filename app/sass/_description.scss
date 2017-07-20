@@ -11,6 +11,47 @@
       letter-spacing: -0.3px;
     }
   }
+  &__vision {
+    max-width: 770px;
+    margin: 0 auto;
+    padding-top: 70px;
+    padding-bottom: 17px;
+    @include main-font1();
+
+    p {
+      margin: 0 0 9px;
+      font-size: 18px;
+      line-height: 24px;
+      color: #3c4f71;
+    }
+    ul {
+
+      li {
+        margin: 0 0 8px;
+        color: #838fa3;
+        font-size: 14px;
+        line-height: 24px;
+      }
+
+    }
+    .description__vision-main {
+      margin: 0 0 40px;
+      font-size: 20px;
+      line-height: 32px;
+      color: #3c4f71;
+      text-align: center;
+    }
+
+  }
+  &__title {
+    margin-bottom: 40px;
+    font-size: 27px;
+    color: #3c4f71;
+    text-align: center;
+    letter-spacing: -0.6px;
+    @include main-font5();
+    //@include main-font4();
+  }
 }
 
 @media (min-width: $tablet-portrait) {
@@ -48,11 +89,43 @@
         line-height: 24px;
       }
     }
+    &__vision {
+
+      p {
+        margin: 0 0 9px;
+        font-size: 20px;
+        line-height: 24px;
+        color: #3c4f71;
+      }
+      ul {
+
+        li {
+          margin: 0 0 8px;
+          font-size: 18px;
+          line-height: 24px;
+        }
+
+      }
+      .description__vision-main {
+        margin: 0 0 68px;
+        font-size: 24px;
+        line-height: 32px;
+      }
+
+    }
+
   }
 }
 
 @media (min-width: $desktop) {
 
+  .description {
 
+    &__title {
+      margin-bottom: 28px;
+      font-size: 33px;
+    }
+
+  }
 
 }
