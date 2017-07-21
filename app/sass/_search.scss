@@ -239,7 +239,7 @@
     overflow: hidden;
 
     img{
-      display: flex;
+      display: block;
       width: 100%;
     }
 
@@ -336,6 +336,7 @@
     }
   }
   &__result-item-pic {
+    overflow: hidden;
     position: relative;
     margin: -20px -15px 20px;
     background-size: cover;
@@ -489,6 +490,14 @@
       justify-content: space-between;
       align-items: stretch;
       padding: 43px 45px 0;
+
+      img{
+        @include absoluteCenterX();
+        display: block;
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+      }
     }
     &__result-item-content{
       width: 50%;
