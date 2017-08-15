@@ -117,7 +117,7 @@
                         map: _map,
                         icon: {
                             url: './img/map_marker.png',
-                            size: new google.maps.Size(64, 96)
+                            size: new google.maps.Size(40, 60)
                         },
                         country: curItem.country,
                         address: curItem.address,

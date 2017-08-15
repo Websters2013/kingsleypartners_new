@@ -8,7 +8,7 @@
     bottom: 0;
     width: 100%;
     background: #f9fbfd;
-    content: '';
+
   }
 
   &__wrap {
@@ -267,6 +267,7 @@
 
   .about-us {
 
+
     &__slider {
 
       &-item {
@@ -322,6 +323,7 @@
 
     &:after{
       border-left: 1px solid #ebebeb;
+      content: "";
     }
 
     &__wrap {
@@ -438,11 +440,11 @@
 @media (min-width: $desktop) {
 
   .about-us {
-    min-height: 500px;
+    min-height: 435px;
     //padding: 0 22px 21px;
 
     &__wrap {
-      padding: 90px 30px 70px;
+      padding: 54px 30px 70px;
       //max-width: 420px;
       width: 51.8%;
     }
@@ -461,9 +463,8 @@
       line-height: 22px;
     }
     &__slider {
-      min-height: 375px;
       height: 100%;
-      padding: 26px 37px 0 64px;
+      padding: 8px 37px 0 64px;
 
       &-wrap {
         right: -2px;
@@ -471,7 +472,7 @@
       }
       &-item {
         height: 100%;
-        padding: 24px 24px 90px;
+        padding: 24px 24px 75px;
       }
 
       &-title {
@@ -525,7 +526,7 @@
     &__offers {
       width: 49.2%;
       //padding: 90px 0 70px;
-      padding: 53px 0;
+      padding: 53px 0 20px 0;
 
       .about-us__title {
         padding: 0 0 0 88px;

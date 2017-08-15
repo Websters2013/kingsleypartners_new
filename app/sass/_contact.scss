@@ -109,7 +109,38 @@
         font-size: 12px;
         line-height: 1;
         text-transform: uppercase;
+        padding-left: 26px;
         @include main-font3();
+        position: relative;
+        &:after{
+          position: absolute;
+          top: -5px;
+          left: 0;
+          content: "";
+          width: 20px;
+          height: 20px;
+        }
+
+
+        &.adrress-label{
+          &:after{
+            background: url(../img/address.png) no-repeat;
+            background-size: cover;
+          }
+
+        }
+        &.email-label{
+          &:after{
+            background: url(../img/email.png) no-repeat;
+            background-size: cover;
+          }
+        }
+        &.tel-label{
+          &:after{
+            background: url(../img/phone.png) no-repeat;
+            background-size: cover;
+          }
+        }
       }
       dd {
         font-size: 14px;

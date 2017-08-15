@@ -1,12 +1,12 @@
 .values {
   padding: 40px 0 20px;
   @include main-font1;
-  background-color: #eee;
+  background-color: #3d5072;
 
   &__title {
     margin-bottom: 40px;
     font-size: 27px;
-    color: #3c4f71;
+    color: #fff;
     text-align: center;
     letter-spacing: -0.6px;
     @include main-font3();
@@ -43,7 +43,7 @@
       font-size: 25px;
       line-height: 28px;
       letter-spacing: -0.8px;
-      color: #3c4f71;
+      color: #fff;
       @include  main-font1();
     }
     p {
